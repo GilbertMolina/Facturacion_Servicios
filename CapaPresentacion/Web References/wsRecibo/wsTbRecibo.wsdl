@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="TbReciboConsultarRecibos">
+        <s:complexType />
+      </s:element>
+      <s:element name="TbReciboConsultarRecibosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TbReciboConsultarRecibosResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="consultarReciboBusquedaMantenimiento">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pRecibo" type="tns:Recibo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="Recibo">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="IdRecibo" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="FechaEmision" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="Correo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Descripcion" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="MontoTotal" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="IdEstado" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="consultarReciboBusquedaMantenimientoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="consultarReciboBusquedaMantenimientoResult" type="tns:Recibo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TbReciboConsultarReciboID">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pRecibo" type="tns:Recibo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TbReciboConsultarReciboIDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TbReciboConsultarReciboIDResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TbReciboInsertarRecibo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pRecibo" type="tns:Recibo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TbReciboInsertarReciboResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TbReciboInsertarReciboResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TbReciboActualizarRecibo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pRecibo" type="tns:Recibo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TbReciboActualizarReciboResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TbReciboActualizarReciboResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TbReciboEliminarRecibo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pRecibo" type="tns:Recibo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TbReciboEliminarReciboResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TbReciboEliminarReciboResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="TbReciboConsultarRecibosSoapIn">
+    <wsdl:part name="parameters" element="tns:TbReciboConsultarRecibos" />
+  </wsdl:message>
+  <wsdl:message name="TbReciboConsultarRecibosSoapOut">
+    <wsdl:part name="parameters" element="tns:TbReciboConsultarRecibosResponse" />
+  </wsdl:message>
+  <wsdl:message name="consultarReciboBusquedaMantenimientoSoapIn">
+    <wsdl:part name="parameters" element="tns:consultarReciboBusquedaMantenimiento" />
+  </wsdl:message>
+  <wsdl:message name="consultarReciboBusquedaMantenimientoSoapOut">
+    <wsdl:part name="parameters" element="tns:consultarReciboBusquedaMantenimientoResponse" />
+  </wsdl:message>
+  <wsdl:message name="TbReciboConsultarReciboIDSoapIn">
+    <wsdl:part name="parameters" element="tns:TbReciboConsultarReciboID" />
+  </wsdl:message>
+  <wsdl:message name="TbReciboConsultarReciboIDSoapOut">
+    <wsdl:part name="parameters" element="tns:TbReciboConsultarReciboIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="TbReciboInsertarReciboSoapIn">
+    <wsdl:part name="parameters" element="tns:TbReciboInsertarRecibo" />
+  </wsdl:message>
+  <wsdl:message name="TbReciboInsertarReciboSoapOut">
+    <wsdl:part name="parameters" element="tns:TbReciboInsertarReciboResponse" />
+  </wsdl:message>
+  <wsdl:message name="TbReciboActualizarReciboSoapIn">
+    <wsdl:part name="parameters" element="tns:TbReciboActualizarRecibo" />
+  </wsdl:message>
+  <wsdl:message name="TbReciboActualizarReciboSoapOut">
+    <wsdl:part name="parameters" element="tns:TbReciboActualizarReciboResponse" />
+  </wsdl:message>
+  <wsdl:message name="TbReciboEliminarReciboSoapIn">
+    <wsdl:part name="parameters" element="tns:TbReciboEliminarRecibo" />
+  </wsdl:message>
+  <wsdl:message name="TbReciboEliminarReciboSoapOut">
+    <wsdl:part name="parameters" element="tns:TbReciboEliminarReciboResponse" />
+  </wsdl:message>
+  <wsdl:portType name="wsTbReciboSoap">
+    <wsdl:operation name="TbReciboConsultarRecibos">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Método que consulta la lista de Recibos por medio de un DataSet.</wsdl:documentation>
+      <wsdl:input message="tns:TbReciboConsultarRecibosSoapIn" />
+      <wsdl:output message="tns:TbReciboConsultarRecibosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="consultarReciboBusquedaMantenimiento">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Método que consulta un Recibo por su ID y retorna un Recibo.</wsdl:documentation>
+      <wsdl:input message="tns:consultarReciboBusquedaMantenimientoSoapIn" />
+      <wsdl:output message="tns:consultarReciboBusquedaMantenimientoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TbReciboConsultarReciboID">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Método que consulta un Recibo por su ID y retorna un Recibo.</wsdl:documentation>
+      <wsdl:input message="tns:TbReciboConsultarReciboIDSoapIn" />
+      <wsdl:output message="tns:TbReciboConsultarReciboIDSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TbReciboInsertarRecibo">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Método que inserta un Recibo.</wsdl:documentation>
+      <wsdl:input message="tns:TbReciboInsertarReciboSoapIn" />
+      <wsdl:output message="tns:TbReciboInsertarReciboSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TbReciboActualizarRecibo">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Método que actualiza un Recibo.</wsdl:documentation>
+      <wsdl:input message="tns:TbReciboActualizarReciboSoapIn" />
+      <wsdl:output message="tns:TbReciboActualizarReciboSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TbReciboEliminarRecibo">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Método que elimina un Recibo.</wsdl:documentation>
+      <wsdl:input message="tns:TbReciboEliminarReciboSoapIn" />
+      <wsdl:output message="tns:TbReciboEliminarReciboSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="wsTbReciboSoap" type="tns:wsTbReciboSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="TbReciboConsultarRecibos">
+      <soap:operation soapAction="http://tempuri.org/TbReciboConsultarRecibos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultarReciboBusquedaMantenimiento">
+      <soap:operation soapAction="http://tempuri.org/consultarReciboBusquedaMantenimiento" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TbReciboConsultarReciboID">
+      <soap:operation soapAction="http://tempuri.org/TbReciboConsultarReciboID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TbReciboInsertarRecibo">
+      <soap:operation soapAction="http://tempuri.org/TbReciboInsertarRecibo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TbReciboActualizarRecibo">
+      <soap:operation soapAction="http://tempuri.org/TbReciboActualizarRecibo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TbReciboEliminarRecibo">
+      <soap:operation soapAction="http://tempuri.org/TbReciboEliminarRecibo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="wsTbReciboSoap12" type="tns:wsTbReciboSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="TbReciboConsultarRecibos">
+      <soap12:operation soapAction="http://tempuri.org/TbReciboConsultarRecibos" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultarReciboBusquedaMantenimiento">
+      <soap12:operation soapAction="http://tempuri.org/consultarReciboBusquedaMantenimiento" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TbReciboConsultarReciboID">
+      <soap12:operation soapAction="http://tempuri.org/TbReciboConsultarReciboID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TbReciboInsertarRecibo">
+      <soap12:operation soapAction="http://tempuri.org/TbReciboInsertarRecibo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TbReciboActualizarRecibo">
+      <soap12:operation soapAction="http://tempuri.org/TbReciboActualizarRecibo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TbReciboEliminarRecibo">
+      <soap12:operation soapAction="http://tempuri.org/TbReciboEliminarRecibo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="wsTbRecibo">
+    <wsdl:port name="wsTbReciboSoap" binding="tns:wsTbReciboSoap">
+      <soap:address location="http://localhost:19447/wsTbRecibo.asmx" />
+    </wsdl:port>
+    <wsdl:port name="wsTbReciboSoap12" binding="tns:wsTbReciboSoap12">
+      <soap12:address location="http://localhost:19447/wsTbRecibo.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

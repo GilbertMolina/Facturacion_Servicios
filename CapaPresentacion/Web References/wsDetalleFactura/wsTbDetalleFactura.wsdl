@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="TbDetalleFacturaConsultarDetallesFactura">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="pIdFactura" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TbDetalleFacturaConsultarDetallesFacturaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TbDetalleFacturaConsultarDetallesFacturaResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TbDetalleFacturaConsultarDetalleFactura">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pDetalleFactura" type="tns:DetalleFactura" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="DetalleFactura">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="IdFactura" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="IdDetalleFactura" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="IdServicio" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="PrecioUnitario" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="Cantidad" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="TbDetalleFacturaConsultarDetalleFacturaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TbDetalleFacturaConsultarDetalleFacturaResult" type="tns:DetalleFactura" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TbDetalleFacturaInsertarDetalleFactura">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pDetalleFactura" type="tns:DetalleFactura" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TbDetalleFacturaInsertarDetalleFacturaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TbDetalleFacturaInsertarDetalleFacturaResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TbDetalleFacturaActualizarDetalleFactura">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pDetalleFactura" type="tns:DetalleFactura" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TbDetalleFacturaActualizarDetalleFacturaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TbDetalleFacturaActualizarDetalleFacturaResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TbDetalleFacturaEliminarDetalleFactura">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pDetalleFactura" type="tns:DetalleFactura" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TbDetalleFacturaEliminarDetalleFacturaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TbDetalleFacturaEliminarDetalleFacturaResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="TbDetalleFacturaConsultarDetallesFacturaSoapIn">
+    <wsdl:part name="parameters" element="tns:TbDetalleFacturaConsultarDetallesFactura" />
+  </wsdl:message>
+  <wsdl:message name="TbDetalleFacturaConsultarDetallesFacturaSoapOut">
+    <wsdl:part name="parameters" element="tns:TbDetalleFacturaConsultarDetallesFacturaResponse" />
+  </wsdl:message>
+  <wsdl:message name="TbDetalleFacturaConsultarDetalleFacturaSoapIn">
+    <wsdl:part name="parameters" element="tns:TbDetalleFacturaConsultarDetalleFactura" />
+  </wsdl:message>
+  <wsdl:message name="TbDetalleFacturaConsultarDetalleFacturaSoapOut">
+    <wsdl:part name="parameters" element="tns:TbDetalleFacturaConsultarDetalleFacturaResponse" />
+  </wsdl:message>
+  <wsdl:message name="TbDetalleFacturaInsertarDetalleFacturaSoapIn">
+    <wsdl:part name="parameters" element="tns:TbDetalleFacturaInsertarDetalleFactura" />
+  </wsdl:message>
+  <wsdl:message name="TbDetalleFacturaInsertarDetalleFacturaSoapOut">
+    <wsdl:part name="parameters" element="tns:TbDetalleFacturaInsertarDetalleFacturaResponse" />
+  </wsdl:message>
+  <wsdl:message name="TbDetalleFacturaActualizarDetalleFacturaSoapIn">
+    <wsdl:part name="parameters" element="tns:TbDetalleFacturaActualizarDetalleFactura" />
+  </wsdl:message>
+  <wsdl:message name="TbDetalleFacturaActualizarDetalleFacturaSoapOut">
+    <wsdl:part name="parameters" element="tns:TbDetalleFacturaActualizarDetalleFacturaResponse" />
+  </wsdl:message>
+  <wsdl:message name="TbDetalleFacturaEliminarDetalleFacturaSoapIn">
+    <wsdl:part name="parameters" element="tns:TbDetalleFacturaEliminarDetalleFactura" />
+  </wsdl:message>
+  <wsdl:message name="TbDetalleFacturaEliminarDetalleFacturaSoapOut">
+    <wsdl:part name="parameters" element="tns:TbDetalleFacturaEliminarDetalleFacturaResponse" />
+  </wsdl:message>
+  <wsdl:portType name="wsTbDetalleFacturaSoap">
+    <wsdl:operation name="TbDetalleFacturaConsultarDetallesFactura">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Método que consulta la lista de Detalles de una Factura por su ID de Factura, por medio de un DataSet.</wsdl:documentation>
+      <wsdl:input message="tns:TbDetalleFacturaConsultarDetallesFacturaSoapIn" />
+      <wsdl:output message="tns:TbDetalleFacturaConsultarDetallesFacturaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TbDetalleFacturaConsultarDetalleFactura">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Método que consulta un Detalle de Factura por su ID de Factura y ID del Detalle, retorna a un Detalle de Factura.</wsdl:documentation>
+      <wsdl:input message="tns:TbDetalleFacturaConsultarDetalleFacturaSoapIn" />
+      <wsdl:output message="tns:TbDetalleFacturaConsultarDetalleFacturaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TbDetalleFacturaInsertarDetalleFactura">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Método que inserta una Factura.</wsdl:documentation>
+      <wsdl:input message="tns:TbDetalleFacturaInsertarDetalleFacturaSoapIn" />
+      <wsdl:output message="tns:TbDetalleFacturaInsertarDetalleFacturaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TbDetalleFacturaActualizarDetalleFactura">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Método que actualiza una Factura.</wsdl:documentation>
+      <wsdl:input message="tns:TbDetalleFacturaActualizarDetalleFacturaSoapIn" />
+      <wsdl:output message="tns:TbDetalleFacturaActualizarDetalleFacturaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TbDetalleFacturaEliminarDetalleFactura">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Método que elimina una Factura.</wsdl:documentation>
+      <wsdl:input message="tns:TbDetalleFacturaEliminarDetalleFacturaSoapIn" />
+      <wsdl:output message="tns:TbDetalleFacturaEliminarDetalleFacturaSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="wsTbDetalleFacturaSoap" type="tns:wsTbDetalleFacturaSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="TbDetalleFacturaConsultarDetallesFactura">
+      <soap:operation soapAction="http://tempuri.org/TbDetalleFacturaConsultarDetallesFactura" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TbDetalleFacturaConsultarDetalleFactura">
+      <soap:operation soapAction="http://tempuri.org/TbDetalleFacturaConsultarDetalleFactura" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TbDetalleFacturaInsertarDetalleFactura">
+      <soap:operation soapAction="http://tempuri.org/TbDetalleFacturaInsertarDetalleFactura" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TbDetalleFacturaActualizarDetalleFactura">
+      <soap:operation soapAction="http://tempuri.org/TbDetalleFacturaActualizarDetalleFactura" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TbDetalleFacturaEliminarDetalleFactura">
+      <soap:operation soapAction="http://tempuri.org/TbDetalleFacturaEliminarDetalleFactura" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="wsTbDetalleFacturaSoap12" type="tns:wsTbDetalleFacturaSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="TbDetalleFacturaConsultarDetallesFactura">
+      <soap12:operation soapAction="http://tempuri.org/TbDetalleFacturaConsultarDetallesFactura" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TbDetalleFacturaConsultarDetalleFactura">
+      <soap12:operation soapAction="http://tempuri.org/TbDetalleFacturaConsultarDetalleFactura" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TbDetalleFacturaInsertarDetalleFactura">
+      <soap12:operation soapAction="http://tempuri.org/TbDetalleFacturaInsertarDetalleFactura" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TbDetalleFacturaActualizarDetalleFactura">
+      <soap12:operation soapAction="http://tempuri.org/TbDetalleFacturaActualizarDetalleFactura" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TbDetalleFacturaEliminarDetalleFactura">
+      <soap12:operation soapAction="http://tempuri.org/TbDetalleFacturaEliminarDetalleFactura" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="wsTbDetalleFactura">
+    <wsdl:port name="wsTbDetalleFacturaSoap" binding="tns:wsTbDetalleFacturaSoap">
+      <soap:address location="http://localhost:19447/wsTbDetalleFactura.asmx" />
+    </wsdl:port>
+    <wsdl:port name="wsTbDetalleFacturaSoap12" binding="tns:wsTbDetalleFacturaSoap12">
+      <soap12:address location="http://localhost:19447/wsTbDetalleFactura.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

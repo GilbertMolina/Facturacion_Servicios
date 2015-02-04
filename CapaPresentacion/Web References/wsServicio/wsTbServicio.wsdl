@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="TbServicioConsultarServicios">
+        <s:complexType />
+      </s:element>
+      <s:element name="TbServicioConsultarServiciosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TbServicioConsultarServiciosResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TbServicioConsultarServicio">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pServicio" type="tns:Servicio" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="Servicio">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="IdServicio" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Descripcion" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="PrecioUnitario" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="IdImpuesto" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="IdEstado" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="TbServicioConsultarServicioResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TbServicioConsultarServicioResult" type="tns:Servicio" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TbServicioConsultarServiciosFiltros">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pDescripcion" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pPrecioUnitario" type="s:double" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TbServicioConsultarServiciosFiltrosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TbServicioConsultarServiciosFiltrosResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TbServicioInsertarServicio">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pServicio" type="tns:Servicio" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TbServicioInsertarServicioResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TbServicioInsertarServicioResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TbServicioActualizarServicio">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pServicio" type="tns:Servicio" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TbServicioActualizarServicioResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TbServicioActualizarServicioResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TbServicioEliminarServicio">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pServicio" type="tns:Servicio" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TbServicioEliminarServicioResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TbServicioEliminarServicioResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="TbServicioConsultarServiciosSoapIn">
+    <wsdl:part name="parameters" element="tns:TbServicioConsultarServicios" />
+  </wsdl:message>
+  <wsdl:message name="TbServicioConsultarServiciosSoapOut">
+    <wsdl:part name="parameters" element="tns:TbServicioConsultarServiciosResponse" />
+  </wsdl:message>
+  <wsdl:message name="TbServicioConsultarServicioSoapIn">
+    <wsdl:part name="parameters" element="tns:TbServicioConsultarServicio" />
+  </wsdl:message>
+  <wsdl:message name="TbServicioConsultarServicioSoapOut">
+    <wsdl:part name="parameters" element="tns:TbServicioConsultarServicioResponse" />
+  </wsdl:message>
+  <wsdl:message name="TbServicioConsultarServiciosFiltrosSoapIn">
+    <wsdl:part name="parameters" element="tns:TbServicioConsultarServiciosFiltros" />
+  </wsdl:message>
+  <wsdl:message name="TbServicioConsultarServiciosFiltrosSoapOut">
+    <wsdl:part name="parameters" element="tns:TbServicioConsultarServiciosFiltrosResponse" />
+  </wsdl:message>
+  <wsdl:message name="TbServicioInsertarServicioSoapIn">
+    <wsdl:part name="parameters" element="tns:TbServicioInsertarServicio" />
+  </wsdl:message>
+  <wsdl:message name="TbServicioInsertarServicioSoapOut">
+    <wsdl:part name="parameters" element="tns:TbServicioInsertarServicioResponse" />
+  </wsdl:message>
+  <wsdl:message name="TbServicioActualizarServicioSoapIn">
+    <wsdl:part name="parameters" element="tns:TbServicioActualizarServicio" />
+  </wsdl:message>
+  <wsdl:message name="TbServicioActualizarServicioSoapOut">
+    <wsdl:part name="parameters" element="tns:TbServicioActualizarServicioResponse" />
+  </wsdl:message>
+  <wsdl:message name="TbServicioEliminarServicioSoapIn">
+    <wsdl:part name="parameters" element="tns:TbServicioEliminarServicio" />
+  </wsdl:message>
+  <wsdl:message name="TbServicioEliminarServicioSoapOut">
+    <wsdl:part name="parameters" element="tns:TbServicioEliminarServicioResponse" />
+  </wsdl:message>
+  <wsdl:portType name="wsTbServicioSoap">
+    <wsdl:operation name="TbServicioConsultarServicios">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Método que consulta la lista de Servicios por medio de un DataSet.</wsdl:documentation>
+      <wsdl:input message="tns:TbServicioConsultarServiciosSoapIn" />
+      <wsdl:output message="tns:TbServicioConsultarServiciosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TbServicioConsultarServicio">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Método que consulta un Servicio por su ID y retorna un Servicio.</wsdl:documentation>
+      <wsdl:input message="tns:TbServicioConsultarServicioSoapIn" />
+      <wsdl:output message="tns:TbServicioConsultarServicioSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TbServicioConsultarServiciosFiltros">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Método que consulta la lista de Servicios pasandole como filtros la descripción o el precio unitario y retorna un DataSet.</wsdl:documentation>
+      <wsdl:input message="tns:TbServicioConsultarServiciosFiltrosSoapIn" />
+      <wsdl:output message="tns:TbServicioConsultarServiciosFiltrosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TbServicioInsertarServicio">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Método que inserta un Servicio.</wsdl:documentation>
+      <wsdl:input message="tns:TbServicioInsertarServicioSoapIn" />
+      <wsdl:output message="tns:TbServicioInsertarServicioSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TbServicioActualizarServicio">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Método que actualiza un Servicio.</wsdl:documentation>
+      <wsdl:input message="tns:TbServicioActualizarServicioSoapIn" />
+      <wsdl:output message="tns:TbServicioActualizarServicioSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TbServicioEliminarServicio">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Método que elimina un Servicio.</wsdl:documentation>
+      <wsdl:input message="tns:TbServicioEliminarServicioSoapIn" />
+      <wsdl:output message="tns:TbServicioEliminarServicioSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="wsTbServicioSoap" type="tns:wsTbServicioSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="TbServicioConsultarServicios">
+      <soap:operation soapAction="http://tempuri.org/TbServicioConsultarServicios" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TbServicioConsultarServicio">
+      <soap:operation soapAction="http://tempuri.org/TbServicioConsultarServicio" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TbServicioConsultarServiciosFiltros">
+      <soap:operation soapAction="http://tempuri.org/TbServicioConsultarServiciosFiltros" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TbServicioInsertarServicio">
+      <soap:operation soapAction="http://tempuri.org/TbServicioInsertarServicio" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TbServicioActualizarServicio">
+      <soap:operation soapAction="http://tempuri.org/TbServicioActualizarServicio" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TbServicioEliminarServicio">
+      <soap:operation soapAction="http://tempuri.org/TbServicioEliminarServicio" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="wsTbServicioSoap12" type="tns:wsTbServicioSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="TbServicioConsultarServicios">
+      <soap12:operation soapAction="http://tempuri.org/TbServicioConsultarServicios" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TbServicioConsultarServicio">
+      <soap12:operation soapAction="http://tempuri.org/TbServicioConsultarServicio" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TbServicioConsultarServiciosFiltros">
+      <soap12:operation soapAction="http://tempuri.org/TbServicioConsultarServiciosFiltros" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TbServicioInsertarServicio">
+      <soap12:operation soapAction="http://tempuri.org/TbServicioInsertarServicio" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TbServicioActualizarServicio">
+      <soap12:operation soapAction="http://tempuri.org/TbServicioActualizarServicio" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TbServicioEliminarServicio">
+      <soap12:operation soapAction="http://tempuri.org/TbServicioEliminarServicio" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="wsTbServicio">
+    <wsdl:port name="wsTbServicioSoap" binding="tns:wsTbServicioSoap">
+      <soap:address location="http://localhost:19447/wsTbServicio.asmx" />
+    </wsdl:port>
+    <wsdl:port name="wsTbServicioSoap12" binding="tns:wsTbServicioSoap12">
+      <soap12:address location="http://localhost:19447/wsTbServicio.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

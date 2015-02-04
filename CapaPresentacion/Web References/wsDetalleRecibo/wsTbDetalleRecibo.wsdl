@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="TbDetalleReciboConsultarDetallesRecibo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="pIdRecibo" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TbDetalleReciboConsultarDetallesReciboResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TbDetalleReciboConsultarDetallesReciboResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TbDetalleReciboConsultarDetalleRecibo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pDetalleRecibo" type="tns:DetalleRecibo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="DetalleRecibo">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="IdRecibo" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="IdDetalleRecibo" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="IdFactura" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="MontoCancelado" type="s:double" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="TbDetalleReciboConsultarDetalleReciboResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TbDetalleReciboConsultarDetalleReciboResult" type="tns:DetalleRecibo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TbDetalleReciboInsertarDetalleRecibo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pDetalleRecibo" type="tns:DetalleRecibo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TbDetalleReciboInsertarDetalleReciboResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TbDetalleReciboInsertarDetalleReciboResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TbDetalleReciboActualizarDetalleRecibo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pDetalleRecibo" type="tns:DetalleRecibo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TbDetalleReciboActualizarDetalleReciboResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TbDetalleReciboActualizarDetalleReciboResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TbDetalleReciboEliminarDetalleRecibo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pDetalleRecibo" type="tns:DetalleRecibo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TbDetalleReciboEliminarDetalleReciboResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TbDetalleReciboEliminarDetalleReciboResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="TbDetalleReciboConsultarDetallesReciboSoapIn">
+    <wsdl:part name="parameters" element="tns:TbDetalleReciboConsultarDetallesRecibo" />
+  </wsdl:message>
+  <wsdl:message name="TbDetalleReciboConsultarDetallesReciboSoapOut">
+    <wsdl:part name="parameters" element="tns:TbDetalleReciboConsultarDetallesReciboResponse" />
+  </wsdl:message>
+  <wsdl:message name="TbDetalleReciboConsultarDetalleReciboSoapIn">
+    <wsdl:part name="parameters" element="tns:TbDetalleReciboConsultarDetalleRecibo" />
+  </wsdl:message>
+  <wsdl:message name="TbDetalleReciboConsultarDetalleReciboSoapOut">
+    <wsdl:part name="parameters" element="tns:TbDetalleReciboConsultarDetalleReciboResponse" />
+  </wsdl:message>
+  <wsdl:message name="TbDetalleReciboInsertarDetalleReciboSoapIn">
+    <wsdl:part name="parameters" element="tns:TbDetalleReciboInsertarDetalleRecibo" />
+  </wsdl:message>
+  <wsdl:message name="TbDetalleReciboInsertarDetalleReciboSoapOut">
+    <wsdl:part name="parameters" element="tns:TbDetalleReciboInsertarDetalleReciboResponse" />
+  </wsdl:message>
+  <wsdl:message name="TbDetalleReciboActualizarDetalleReciboSoapIn">
+    <wsdl:part name="parameters" element="tns:TbDetalleReciboActualizarDetalleRecibo" />
+  </wsdl:message>
+  <wsdl:message name="TbDetalleReciboActualizarDetalleReciboSoapOut">
+    <wsdl:part name="parameters" element="tns:TbDetalleReciboActualizarDetalleReciboResponse" />
+  </wsdl:message>
+  <wsdl:message name="TbDetalleReciboEliminarDetalleReciboSoapIn">
+    <wsdl:part name="parameters" element="tns:TbDetalleReciboEliminarDetalleRecibo" />
+  </wsdl:message>
+  <wsdl:message name="TbDetalleReciboEliminarDetalleReciboSoapOut">
+    <wsdl:part name="parameters" element="tns:TbDetalleReciboEliminarDetalleReciboResponse" />
+  </wsdl:message>
+  <wsdl:portType name="wsTbDetalleReciboSoap">
+    <wsdl:operation name="TbDetalleReciboConsultarDetallesRecibo">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Método que consulta la lista de Detalles de un Recibo por su ID de Recibo, por medio de un DataSet.</wsdl:documentation>
+      <wsdl:input message="tns:TbDetalleReciboConsultarDetallesReciboSoapIn" />
+      <wsdl:output message="tns:TbDetalleReciboConsultarDetallesReciboSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TbDetalleReciboConsultarDetalleRecibo">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Método que consulta un Detalle de Recibo por su ID de Recibo y ID del Detalle, retorna un Detalle de Recibo.</wsdl:documentation>
+      <wsdl:input message="tns:TbDetalleReciboConsultarDetalleReciboSoapIn" />
+      <wsdl:output message="tns:TbDetalleReciboConsultarDetalleReciboSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TbDetalleReciboInsertarDetalleRecibo">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Método que inserta un Estado.</wsdl:documentation>
+      <wsdl:input message="tns:TbDetalleReciboInsertarDetalleReciboSoapIn" />
+      <wsdl:output message="tns:TbDetalleReciboInsertarDetalleReciboSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TbDetalleReciboActualizarDetalleRecibo">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Método que actualiza un Estado.</wsdl:documentation>
+      <wsdl:input message="tns:TbDetalleReciboActualizarDetalleReciboSoapIn" />
+      <wsdl:output message="tns:TbDetalleReciboActualizarDetalleReciboSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TbDetalleReciboEliminarDetalleRecibo">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Método que elimina un Estado.</wsdl:documentation>
+      <wsdl:input message="tns:TbDetalleReciboEliminarDetalleReciboSoapIn" />
+      <wsdl:output message="tns:TbDetalleReciboEliminarDetalleReciboSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="wsTbDetalleReciboSoap" type="tns:wsTbDetalleReciboSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="TbDetalleReciboConsultarDetallesRecibo">
+      <soap:operation soapAction="http://tempuri.org/TbDetalleReciboConsultarDetallesRecibo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TbDetalleReciboConsultarDetalleRecibo">
+      <soap:operation soapAction="http://tempuri.org/TbDetalleReciboConsultarDetalleRecibo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TbDetalleReciboInsertarDetalleRecibo">
+      <soap:operation soapAction="http://tempuri.org/TbDetalleReciboInsertarDetalleRecibo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TbDetalleReciboActualizarDetalleRecibo">
+      <soap:operation soapAction="http://tempuri.org/TbDetalleReciboActualizarDetalleRecibo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TbDetalleReciboEliminarDetalleRecibo">
+      <soap:operation soapAction="http://tempuri.org/TbDetalleReciboEliminarDetalleRecibo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="wsTbDetalleReciboSoap12" type="tns:wsTbDetalleReciboSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="TbDetalleReciboConsultarDetallesRecibo">
+      <soap12:operation soapAction="http://tempuri.org/TbDetalleReciboConsultarDetallesRecibo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TbDetalleReciboConsultarDetalleRecibo">
+      <soap12:operation soapAction="http://tempuri.org/TbDetalleReciboConsultarDetalleRecibo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TbDetalleReciboInsertarDetalleRecibo">
+      <soap12:operation soapAction="http://tempuri.org/TbDetalleReciboInsertarDetalleRecibo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TbDetalleReciboActualizarDetalleRecibo">
+      <soap12:operation soapAction="http://tempuri.org/TbDetalleReciboActualizarDetalleRecibo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TbDetalleReciboEliminarDetalleRecibo">
+      <soap12:operation soapAction="http://tempuri.org/TbDetalleReciboEliminarDetalleRecibo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="wsTbDetalleRecibo">
+    <wsdl:port name="wsTbDetalleReciboSoap" binding="tns:wsTbDetalleReciboSoap">
+      <soap:address location="http://localhost:19447/wsTbDetalleRecibo.asmx" />
+    </wsdl:port>
+    <wsdl:port name="wsTbDetalleReciboSoap12" binding="tns:wsTbDetalleReciboSoap12">
+      <soap12:address location="http://localhost:19447/wsTbDetalleRecibo.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

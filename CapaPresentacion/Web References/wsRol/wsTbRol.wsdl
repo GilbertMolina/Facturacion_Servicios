@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="TbRolConsultarRoles">
+        <s:complexType />
+      </s:element>
+      <s:element name="TbRolConsultarRolesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TbRolConsultarRolesResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TbRolConsultarRol">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pRol" type="tns:Rol" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="Rol">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="IdRol" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Descripcion" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="TbRolConsultarRolResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TbRolConsultarRolResult" type="tns:Rol" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TbRolInsertarRol">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pRol" type="tns:Rol" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TbRolInsertarRolResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TbRolInsertarRolResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TbRolActualizarRol">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pRol" type="tns:Rol" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TbRolActualizarRolResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TbRolActualizarRolResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TbRolEliminarRol">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pRol" type="tns:Rol" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TbRolEliminarRolResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TbRolEliminarRolResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="TbRolConsultarRolesSoapIn">
+    <wsdl:part name="parameters" element="tns:TbRolConsultarRoles" />
+  </wsdl:message>
+  <wsdl:message name="TbRolConsultarRolesSoapOut">
+    <wsdl:part name="parameters" element="tns:TbRolConsultarRolesResponse" />
+  </wsdl:message>
+  <wsdl:message name="TbRolConsultarRolSoapIn">
+    <wsdl:part name="parameters" element="tns:TbRolConsultarRol" />
+  </wsdl:message>
+  <wsdl:message name="TbRolConsultarRolSoapOut">
+    <wsdl:part name="parameters" element="tns:TbRolConsultarRolResponse" />
+  </wsdl:message>
+  <wsdl:message name="TbRolInsertarRolSoapIn">
+    <wsdl:part name="parameters" element="tns:TbRolInsertarRol" />
+  </wsdl:message>
+  <wsdl:message name="TbRolInsertarRolSoapOut">
+    <wsdl:part name="parameters" element="tns:TbRolInsertarRolResponse" />
+  </wsdl:message>
+  <wsdl:message name="TbRolActualizarRolSoapIn">
+    <wsdl:part name="parameters" element="tns:TbRolActualizarRol" />
+  </wsdl:message>
+  <wsdl:message name="TbRolActualizarRolSoapOut">
+    <wsdl:part name="parameters" element="tns:TbRolActualizarRolResponse" />
+  </wsdl:message>
+  <wsdl:message name="TbRolEliminarRolSoapIn">
+    <wsdl:part name="parameters" element="tns:TbRolEliminarRol" />
+  </wsdl:message>
+  <wsdl:message name="TbRolEliminarRolSoapOut">
+    <wsdl:part name="parameters" element="tns:TbRolEliminarRolResponse" />
+  </wsdl:message>
+  <wsdl:portType name="wsTbRolSoap">
+    <wsdl:operation name="TbRolConsultarRoles">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Método que consulta la lista de Roles por medio de un DataSet.</wsdl:documentation>
+      <wsdl:input message="tns:TbRolConsultarRolesSoapIn" />
+      <wsdl:output message="tns:TbRolConsultarRolesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TbRolConsultarRol">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Método que consulta un Rol por su ID y retorna un Rol.</wsdl:documentation>
+      <wsdl:input message="tns:TbRolConsultarRolSoapIn" />
+      <wsdl:output message="tns:TbRolConsultarRolSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TbRolInsertarRol">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Método que inserta un Rol.</wsdl:documentation>
+      <wsdl:input message="tns:TbRolInsertarRolSoapIn" />
+      <wsdl:output message="tns:TbRolInsertarRolSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TbRolActualizarRol">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Método que actualiza un Rol.</wsdl:documentation>
+      <wsdl:input message="tns:TbRolActualizarRolSoapIn" />
+      <wsdl:output message="tns:TbRolActualizarRolSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TbRolEliminarRol">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Método que elimina un Rol.</wsdl:documentation>
+      <wsdl:input message="tns:TbRolEliminarRolSoapIn" />
+      <wsdl:output message="tns:TbRolEliminarRolSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="wsTbRolSoap" type="tns:wsTbRolSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="TbRolConsultarRoles">
+      <soap:operation soapAction="http://tempuri.org/TbRolConsultarRoles" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TbRolConsultarRol">
+      <soap:operation soapAction="http://tempuri.org/TbRolConsultarRol" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TbRolInsertarRol">
+      <soap:operation soapAction="http://tempuri.org/TbRolInsertarRol" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TbRolActualizarRol">
+      <soap:operation soapAction="http://tempuri.org/TbRolActualizarRol" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TbRolEliminarRol">
+      <soap:operation soapAction="http://tempuri.org/TbRolEliminarRol" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="wsTbRolSoap12" type="tns:wsTbRolSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="TbRolConsultarRoles">
+      <soap12:operation soapAction="http://tempuri.org/TbRolConsultarRoles" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TbRolConsultarRol">
+      <soap12:operation soapAction="http://tempuri.org/TbRolConsultarRol" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TbRolInsertarRol">
+      <soap12:operation soapAction="http://tempuri.org/TbRolInsertarRol" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TbRolActualizarRol">
+      <soap12:operation soapAction="http://tempuri.org/TbRolActualizarRol" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TbRolEliminarRol">
+      <soap12:operation soapAction="http://tempuri.org/TbRolEliminarRol" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="wsTbRol">
+    <wsdl:port name="wsTbRolSoap" binding="tns:wsTbRolSoap">
+      <soap:address location="http://localhost:19447/wsTbRol.asmx" />
+    </wsdl:port>
+    <wsdl:port name="wsTbRolSoap12" binding="tns:wsTbRolSoap12">
+      <soap12:address location="http://localhost:19447/wsTbRol.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

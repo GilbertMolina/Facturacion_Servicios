@@ -1,0 +1,724 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{3C2CC7E0-4B63-40D9-8DBC-0A9088180E65}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>CapaPresentacion</RootNamespace>
+    <AssemblyName>CapaPresentacion</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <MyType>Custom</MyType>
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>CapaPresentacion.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>CapaPresentacion.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="includes\fonts\glyphicons-halflings-regular.eot" />
+    <None Include="includes\fonts\glyphicons-halflings-regular.ttf" />
+    <None Include="includes\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="includes\css\styles.css" />
+    <Content Include="includes\images\application-services.png" />
+    <Content Include="includes\images\business-services.png" />
+    <Content Include="includes\images\fondo.gif" />
+    <Content Include="includes\images\ico-agregar.png" />
+    <Content Include="includes\images\ico-buscar.png" />
+    <Content Include="includes\images\ico-eliminar.png" />
+    <Content Include="includes\images\ico-error.png" />
+    <Content Include="includes\images\ico-favicon.png" />
+    <Content Include="includes\images\ico-imprimir.png" />
+    <Content Include="includes\images\ico-limpiar.png" />
+    <Content Include="includes\images\ico-modificar.png" />
+    <Content Include="includes\images\ico-refrescar.png" />
+    <Content Include="includes\images\logo-uia.png" />
+    <Content Include="includes\images\professional-services.png" />
+    <Content Include="includes\jquery\jquery_1.11.1.min.js" />
+    <Content Include="includes\js\script.js" />
+    <Content Include="MasterPage\ServiciosABCDefault.Master" />
+    <Content Include="MasterPage\ServiciosABCSuperAdmin.Master" />
+    <Content Include="MasterPage\ServiciosABCAdmin.Master" />
+    <Content Include="MasterPage\ServiciosABCAgenteFacturas.Master" />
+    <Content Include="MasterPage\ServiciosABCAgenteRecibos.Master" />
+    <Content Include="MasterPage\ServiciosABCEncargadoCobro.Master" />
+    <Content Include="MasterPage\ServiciosABCCliente.Master" />
+    <None Include="includes\Reportes\DataSetFacturas.xsc">
+      <DependentUpon>DataSetFacturas.xsd</DependentUpon>
+    </None>
+    <None Include="includes\Reportes\DataSetFacturas.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetFacturas.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="includes\Reportes\DataSetFacturas.xss">
+      <DependentUpon>DataSetFacturas.xsd</DependentUpon>
+    </None>
+    <None Include="includes\Reportes\DataSetRecibos.xsc">
+      <DependentUpon>DataSetRecibos.xsd</DependentUpon>
+    </None>
+    <None Include="includes\Reportes\DataSetRecibos.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetRecibos.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="includes\Reportes\DataSetRecibos.xss">
+      <DependentUpon>DataSetRecibos.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\DataSources\System.Data.DataSet.datasource" />
+    <Content Include="includes\css\bootstrap-theme.min.css" />
+    <Content Include="includes\css\bootstrap.min.css" />
+    <Content Include="includes\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="includes\js\bootstrap.min.js" />
+    <Content Include="sitio\cambiar_contrasena.aspx" />
+    <Content Include="sitio\cerrar_sesion.aspx" />
+    <Content Include="sitio\listadoFacturasAnuladas.aspx" />
+    <Content Include="sitio\listadoFacturasImpresas.aspx" />
+    <Content Include="sitio\listadoRecibos.aspx" />
+    <Content Include="sitio\default.aspx" />
+    <Content Include="sitio\inicio.aspx" />
+    <Content Include="sitio\listadoClientes.aspx" />
+    <Content Include="sitio\listadoFacturas.aspx" />
+    <Content Include="sitio\listadoImpuestos.aspx" />
+    <Content Include="sitio\listadoServicios.aspx" />
+    <Content Include="sitio\listadoUsuarios.aspx" />
+    <Content Include="sitio\maClientes.aspx" />
+    <Content Include="sitio\maFacturas.aspx" />
+    <Content Include="sitio\maImpuestos.aspx" />
+    <Content Include="sitio\maRecibos.aspx" />
+    <Content Include="sitio\maServicios.aspx" />
+    <Content Include="sitio\maUsuarios.aspx" />
+    <Content Include="sitio\recordar_contrasena.aspx" />
+    <Content Include="sitio\registrar_usuario.aspx" />
+    <Content Include="sitio\rptEstadoCuenta.aspx" />
+    <Content Include="sitio\rptFacturasImpresas.aspx" />
+    <Content Include="sitio\rptRecibosImpresos.aspx" />
+    <Content Include="sitio\sobre.aspx" />
+    <None Include="Web References\wsDetalleFactura\DetalleFactura.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\wsDetalleFactura\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\wsDetalleFactura\wsTbDetalleFactura.disco" />
+    <None Include="Web References\wsDetalleRecibo\DetalleRecibo.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\wsDetalleRecibo\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\wsDetalleRecibo\wsTbDetalleRecibo.disco" />
+    <None Include="Web References\wsEstado\Estado.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\wsEstado\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\wsEstado\wsTbEstado.disco" />
+    <None Include="Web References\wsFactura\Factura.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\wsFactura\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\wsFactura\wsTbFactura.disco" />
+    <None Include="Web References\wsImpuesto\Impuesto.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\wsImpuesto\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\wsImpuesto\wsTbImpuesto.disco" />
+    <None Include="Web References\wsPersona\Persona.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\wsPersona\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\wsPersona\wsTbPersona.wsdl" />
+    <None Include="Web References\wsRecibo\Recibo.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\wsRecibo\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\wsRecibo\wsTbRecibo.wsdl" />
+    <None Include="Web References\wsRol\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\wsRol\Rol.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\wsRol\wsTbRol.disco" />
+    <None Include="Web References\wsPersona\wsTbPersona.disco" />
+    <None Include="Web References\wsServicio\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\wsServicio\Servicio1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\wsServicio\wsTbServicio.disco" />
+    <None Include="Web References\wsRecibo\wsTbRecibo.disco" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <None Include="Web References\wsDetalleFactura\wsTbDetalleFactura.wsdl" />
+    <None Include="Web References\wsDetalleRecibo\wsTbDetalleRecibo.wsdl" />
+    <None Include="Web References\wsEstado\wsTbEstado.wsdl" />
+    <None Include="Web References\wsFactura\wsTbFactura.wsdl" />
+    <None Include="Web References\wsImpuesto\wsTbImpuesto.wsdl" />
+    <None Include="Web References\wsRol\wsTbRol.wsdl" />
+    <None Include="Web References\wsServicio\wsTbServicio.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="includes\Reportes\DataSetFacturas.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetFacturas.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="includes\Reportes\DataSetFacturas.vb">
+      <DependentUpon>DataSetFacturas.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="includes\Reportes\DataSetRecibos.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetRecibos.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="includes\Reportes\DataSetRecibos.vb">
+      <DependentUpon>DataSetRecibos.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPage\ServiciosABCAdmin.Master.designer.vb">
+      <DependentUpon>ServiciosABCAdmin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPage\ServiciosABCAdmin.Master.vb">
+      <DependentUpon>ServiciosABCAdmin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPage\ServiciosABCAgenteFacturas.Master.designer.vb">
+      <DependentUpon>ServiciosABCAgenteFacturas.Master</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPage\ServiciosABCAgenteFacturas.Master.vb">
+      <DependentUpon>ServiciosABCAgenteFacturas.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPage\ServiciosABCAgenteRecibos.Master.designer.vb">
+      <DependentUpon>ServiciosABCAgenteRecibos.Master</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPage\ServiciosABCAgenteRecibos.Master.vb">
+      <DependentUpon>ServiciosABCAgenteRecibos.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPage\ServiciosABCCliente.Master.designer.vb">
+      <DependentUpon>ServiciosABCCliente.Master</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPage\ServiciosABCCliente.Master.vb">
+      <DependentUpon>ServiciosABCCliente.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPage\ServiciosABCDefault.Master.designer.vb">
+      <DependentUpon>ServiciosABCDefault.Master</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPage\ServiciosABCDefault.Master.vb">
+      <DependentUpon>ServiciosABCDefault.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPage\ServiciosABCEncargadoCobro.Master.designer.vb">
+      <DependentUpon>ServiciosABCEncargadoCobro.Master</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPage\ServiciosABCEncargadoCobro.Master.vb">
+      <DependentUpon>ServiciosABCEncargadoCobro.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPage\ServiciosABCSuperAdmin.Master.designer.vb">
+      <DependentUpon>ServiciosABCSuperAdmin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPage\ServiciosABCSuperAdmin.Master.vb">
+      <DependentUpon>ServiciosABCSuperAdmin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\MyExtensions\MyWebExtension.vb">
+      <VBMyExtensionTemplateID>Microsoft.VisualBasic.Web.MyExtension</VBMyExtensionTemplateID>
+      <VBMyExtensionTemplateVersion>1.0.0.0</VBMyExtensionTemplateVersion>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="sitio\cambiar_contrasena.aspx.designer.vb">
+      <DependentUpon>cambiar_contrasena.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sitio\cambiar_contrasena.aspx.vb">
+      <DependentUpon>cambiar_contrasena.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="sitio\cerrar_sesion.aspx.designer.vb">
+      <DependentUpon>cerrar_sesion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sitio\cerrar_sesion.aspx.vb">
+      <DependentUpon>cerrar_sesion.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="sitio\listadoFacturasAnuladas.aspx.designer.vb">
+      <DependentUpon>listadoFacturasAnuladas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sitio\listadoFacturasAnuladas.aspx.vb">
+      <DependentUpon>listadoFacturasAnuladas.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="sitio\listadoFacturasImpresas.aspx.designer.vb">
+      <DependentUpon>listadoFacturasImpresas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sitio\listadoFacturasImpresas.aspx.vb">
+      <DependentUpon>listadoFacturasImpresas.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="sitio\listadoRecibos.aspx.designer.vb">
+      <DependentUpon>listadoRecibos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sitio\listadoRecibos.aspx.vb">
+      <DependentUpon>listadoRecibos.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="sitio\default.aspx.designer.vb">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sitio\default.aspx.vb">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="sitio\inicio.aspx.designer.vb">
+      <DependentUpon>inicio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sitio\inicio.aspx.vb">
+      <DependentUpon>inicio.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="sitio\listadoClientes.aspx.designer.vb">
+      <DependentUpon>listadoClientes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sitio\listadoClientes.aspx.vb">
+      <DependentUpon>listadoClientes.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="sitio\listadoFacturas.aspx.designer.vb">
+      <DependentUpon>listadoFacturas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sitio\listadoFacturas.aspx.vb">
+      <DependentUpon>listadoFacturas.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="sitio\listadoImpuestos.aspx.designer.vb">
+      <DependentUpon>listadoImpuestos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sitio\listadoImpuestos.aspx.vb">
+      <DependentUpon>listadoImpuestos.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="sitio\listadoServicios.aspx.designer.vb">
+      <DependentUpon>listadoServicios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sitio\listadoServicios.aspx.vb">
+      <DependentUpon>listadoServicios.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="sitio\listadoUsuarios.aspx.designer.vb">
+      <DependentUpon>listadoUsuarios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sitio\listadoUsuarios.aspx.vb">
+      <DependentUpon>listadoUsuarios.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="sitio\maClientes.aspx.designer.vb">
+      <DependentUpon>maClientes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sitio\maClientes.aspx.vb">
+      <DependentUpon>maClientes.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="sitio\maFacturas.aspx.designer.vb">
+      <DependentUpon>maFacturas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sitio\maFacturas.aspx.vb">
+      <DependentUpon>maFacturas.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="sitio\maImpuestos.aspx.designer.vb">
+      <DependentUpon>maImpuestos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sitio\maImpuestos.aspx.vb">
+      <DependentUpon>maImpuestos.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="sitio\maRecibos.aspx.designer.vb">
+      <DependentUpon>maRecibos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sitio\maRecibos.aspx.vb">
+      <DependentUpon>maRecibos.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="sitio\maServicios.aspx.designer.vb">
+      <DependentUpon>maServicios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sitio\maServicios.aspx.vb">
+      <DependentUpon>maServicios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sitio\maUsuarios.aspx.designer.vb">
+      <DependentUpon>maUsuarios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sitio\maUsuarios.aspx.vb">
+      <DependentUpon>maUsuarios.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="sitio\recordar_contrasena.aspx.designer.vb">
+      <DependentUpon>recordar_contrasena.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sitio\recordar_contrasena.aspx.vb">
+      <DependentUpon>recordar_contrasena.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="sitio\registrar_usuario.aspx.designer.vb">
+      <DependentUpon>registrar_usuario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sitio\registrar_usuario.aspx.vb">
+      <DependentUpon>registrar_usuario.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="sitio\rptEstadoCuenta.aspx.designer.vb">
+      <DependentUpon>rptEstadoCuenta.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sitio\rptEstadoCuenta.aspx.vb">
+      <DependentUpon>rptEstadoCuenta.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="sitio\rptFacturasImpresas.aspx.designer.vb">
+      <DependentUpon>rptFacturasImpresas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sitio\rptFacturasImpresas.aspx.vb">
+      <DependentUpon>rptFacturasImpresas.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="sitio\rptRecibosImpresos.aspx.designer.vb">
+      <DependentUpon>rptRecibosImpresos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sitio\rptRecibosImpresos.aspx.vb">
+      <DependentUpon>rptRecibosImpresos.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="sitio\sobre.aspx.designer.vb">
+      <DependentUpon>sobre.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sitio\sobre.aspx.vb">
+      <DependentUpon>sobre.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="utiles\utiles.vb" />
+    <Compile Include="Web References\wsDetalleFactura\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\wsDetalleRecibo\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\wsEstado\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\wsFactura\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\wsImpuesto\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\wsPersona\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\wsRecibo\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\wsRol\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\wsServicio\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="includes\Reportes\ReporteFacturas.rdlc" />
+    <EmbeddedResource Include="includes\Reportes\ReporteRecibos.rdlc" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Objetos\Objetos.vbproj">
+      <Project>{6B176603-7F32-4AB3-B2F4-6DEB498FC155}</Project>
+      <Name>Objetos</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://localhost:19447/wsTbPersona.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\wsPersona\</RelPath>
+      <UpdateFromURL>http://localhost:19447/wsTbPersona.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>CapaPresentacion_wsPersona_wsTbPersona</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://localhost:19447/wsTbRecibo.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\wsRecibo\</RelPath>
+      <UpdateFromURL>http://localhost:19447/wsTbRecibo.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>CapaPresentacion_wsRecibo_wsTbRecibo</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://localhost:19447/wsTbServicio.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\wsServicio\</RelPath>
+      <UpdateFromURL>http://localhost:19447/wsTbServicio.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>CapaPresentacion_wsServicio1_wsTbServicio</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://localhost:19447/wsTbDetalleFactura.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\wsDetalleFactura\</RelPath>
+      <UpdateFromURL>http://localhost:19447/wsTbDetalleFactura.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>CapaPresentacion_wsDetalleFactura_wsTbDetalleFactura</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://localhost:19447/wsTbDetalleRecibo.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\wsDetalleRecibo\</RelPath>
+      <UpdateFromURL>http://localhost:19447/wsTbDetalleRecibo.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>CapaPresentacion_wsDetalleRecibo_wsTbDetalleRecibo</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://localhost:19447/wsTbEstado.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\wsEstado\</RelPath>
+      <UpdateFromURL>http://localhost:19447/wsTbEstado.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>CapaPresentacion_wsEstado_wsTbEstado</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://localhost:19447/wsTbFactura.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\wsFactura\</RelPath>
+      <UpdateFromURL>http://localhost:19447/wsTbFactura.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>CapaPresentacion_wsFactura_wsTbFactura</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://localhost:19447/wsTbImpuesto.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\wsImpuesto\</RelPath>
+      <UpdateFromURL>http://localhost:19447/wsTbImpuesto.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>CapaPresentacion_wsImpuesto_wsTbImpuesto</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://localhost:19447/wsTbRol.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\wsRol\</RelPath>
+      <UpdateFromURL>http://localhost:19447/wsTbRol.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>CapaPresentacion_wsRol_wsTbRol</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>58963</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

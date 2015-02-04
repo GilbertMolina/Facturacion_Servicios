@@ -1,0 +1,3284 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+CapaPresentacion
+</name>
+</assembly>
+<members>
+<member name="F:CapaPresentacion.cerrar_sesion.form1">
+	<summary>
+control form1.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.listadoFacturasAnuladas.txtIdFactura">
+	<summary>
+Control txtIdFactura.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.listadoFacturasAnuladas.txtNombreCliente">
+	<summary>
+Control txtNombreCliente.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.listadoFacturasAnuladas.imgbtnBuscar">
+	<summary>
+Control imgbtnBuscar.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.listadoFacturasAnuladas.imgbtnLimpiar">
+	<summary>
+Control imgbtnLimpiar.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.listadoFacturasAnuladas.updatePanelListaFacturas">
+	<summary>
+Control updatePanelListaFacturas.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.listadoFacturasAnuladas.pnGridViewSinDatos">
+	<summary>
+Control pnGridViewSinDatos.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.listadoFacturasAnuladas.lbGridViewSinDatos">
+	<summary>
+Control lbGridViewSinDatos.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.listadoFacturasAnuladas.grdListaFacturas">
+	<summary>
+Control grdListaFacturas.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="T:CapaPresentacion.DataSetRecibos.SP__Reporte_RecibosDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:CapaPresentacion.DataSetRecibos.SP__Reporte_RecibosRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:CapaPresentacion.DataSetRecibos.SP__Reporte_RecibosRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:CapaPresentacion.DataSetRecibos">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:CapaPresentacion.DataSetRecibosTableAdapters.SP__Reporte_RecibosTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:CapaPresentacion.DataSetRecibosTableAdapters.TableAdapterManager.UpdateUpdatedRows(CapaPresentacion.DataSetRecibos,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:CapaPresentacion.DataSetRecibosTableAdapters.TableAdapterManager.UpdateInsertedRows(CapaPresentacion.DataSetRecibos,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:CapaPresentacion.DataSetRecibosTableAdapters.TableAdapterManager.UpdateDeletedRows(CapaPresentacion.DataSetRecibos,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:CapaPresentacion.DataSetRecibosTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:CapaPresentacion.DataSetRecibosTableAdapters.TableAdapterManager.UpdateAll(CapaPresentacion.DataSetRecibos)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:CapaPresentacion.DataSetRecibosTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:CapaPresentacion.DataSetRecibosTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:CapaPresentacion.DataSetRecibosTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="F:CapaPresentacion.ServiciosABCEncargadoCobro.contentHeader">
+	<summary>
+Control contentHeader.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.ServiciosABCEncargadoCobro.form1">
+	<summary>
+Control form1.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.ServiciosABCEncargadoCobro.ScriptManagerEncargadoCobro">
+	<summary>
+Control ScriptManagerEncargadoCobro.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.ServiciosABCEncargadoCobro.lbNombreUsuario">
+	<summary>
+Control lbNombreUsuario.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.ServiciosABCEncargadoCobro.contentPage">
+	<summary>
+Control contentPage.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.ServiciosABCEncargadoCobro.contentFooter">
+	<summary>
+Control contentFooter.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.inicio.lbNombreCompletoUsuario">
+	<summary>
+Control lbNombreCompletoUsuario.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.inicio.lbRolAsignado">
+	<summary>
+Control lbRolAsignado.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.maFacturas.updatePanelFactura">
+	<summary>
+Control updatePanelFactura.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.maFacturas.pnErrorCargarFacturaSuccess">
+	<summary>
+Control pnErrorCargarFacturaSuccess.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.maFacturas.lbErrorCargarFacturaSuccess">
+	<summary>
+Control lbErrorCargarFacturaSuccess.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.maFacturas.pnErrorCargarFactura">
+	<summary>
+Control pnErrorCargarFactura.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.maFacturas.lbErrorCargarFactura">
+	<summary>
+Control lbErrorCargarFactura.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.maFacturas.txtIdFactura">
+	<summary>
+Control txtIdFactura.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.maFacturas.txtFechaEmision">
+	<summary>
+Control txtFechaEmision.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.maFacturas.ddlNombreCliente">
+	<summary>
+Control ddlNombreCliente.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.maFacturas.txtFechaVencimiento">
+	<summary>
+Control txtFechaVencimiento.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.maFacturas.ddlEstado">
+	<summary>
+Control ddlEstado.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.maFacturas.txtMontoTotalFactura">
+	<summary>
+Control txtMontoTotalFactura.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.maFacturas.txtMontoTotalPagado">
+	<summary>
+Control txtMontoTotalPagado.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.maFacturas.btnLimpiar">
+	<summary>
+Control btnLimpiar.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.maFacturas.btnAccion">
+	<summary>
+Control btnAccion.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.maFacturas.updatePanelListaDetalleFactura">
+	<summary>
+Control updatePanelListaDetalleFactura.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.maFacturas.pnDetalleFactura">
+	<summary>
+Control pnDetalleFactura.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.maFacturas.ddlServicio">
+	<summary>
+Control ddlServicio.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.maFacturas.txtCantidad">
+	<summary>
+Control txtCantidad.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.maFacturas.txtMontoServicio">
+	<summary>
+Control txtMontoServicio.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.maFacturas.imgbtnActualizar">
+	<summary>
+Control imgbtnActualizar.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.maFacturas.imgbtnAgregar">
+	<summary>
+Control imgbtnAgregar.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.maFacturas.pnGridViewSinDatos">
+	<summary>
+Control pnGridViewSinDatos.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.maFacturas.lbGridViewSinDatos">
+	<summary>
+Control lbGridViewSinDatos.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.maFacturas.grdListaDetalleFactura">
+	<summary>
+Control grdListaDetalleFactura.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.maFacturas.hlRegresar">
+	<summary>
+Control hlRegresar.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="M:CapaPresentacion.wsDetalleRecibo.wsTbDetalleRecibo.#ctor">
+	<remarks/>
+</member><member name="E:CapaPresentacion.wsDetalleRecibo.wsTbDetalleRecibo.TbDetalleReciboConsultarDetallesReciboCompleted">
+	<remarks/>
+</member><member name="E:CapaPresentacion.wsDetalleRecibo.wsTbDetalleRecibo.TbDetalleReciboConsultarDetalleReciboCompleted">
+	<remarks/>
+</member><member name="E:CapaPresentacion.wsDetalleRecibo.wsTbDetalleRecibo.TbDetalleReciboInsertarDetalleReciboCompleted">
+	<remarks/>
+</member><member name="E:CapaPresentacion.wsDetalleRecibo.wsTbDetalleRecibo.TbDetalleReciboActualizarDetalleReciboCompleted">
+	<remarks/>
+</member><member name="E:CapaPresentacion.wsDetalleRecibo.wsTbDetalleRecibo.TbDetalleReciboEliminarDetalleReciboCompleted">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsDetalleRecibo.wsTbDetalleRecibo.TbDetalleReciboConsultarDetallesRecibo(System.Int32)">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsDetalleRecibo.wsTbDetalleRecibo.TbDetalleReciboConsultarDetallesReciboAsync(System.Int32)">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsDetalleRecibo.wsTbDetalleRecibo.TbDetalleReciboConsultarDetallesReciboAsync(System.Int32,System.Object)">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsDetalleRecibo.wsTbDetalleRecibo.TbDetalleReciboConsultarDetalleRecibo(CapaPresentacion.wsDetalleRecibo.DetalleRecibo)">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsDetalleRecibo.wsTbDetalleRecibo.TbDetalleReciboConsultarDetalleReciboAsync(CapaPresentacion.wsDetalleRecibo.DetalleRecibo)">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsDetalleRecibo.wsTbDetalleRecibo.TbDetalleReciboConsultarDetalleReciboAsync(CapaPresentacion.wsDetalleRecibo.DetalleRecibo,System.Object)">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsDetalleRecibo.wsTbDetalleRecibo.TbDetalleReciboInsertarDetalleRecibo(CapaPresentacion.wsDetalleRecibo.DetalleRecibo)">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsDetalleRecibo.wsTbDetalleRecibo.TbDetalleReciboInsertarDetalleReciboAsync(CapaPresentacion.wsDetalleRecibo.DetalleRecibo)">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsDetalleRecibo.wsTbDetalleRecibo.TbDetalleReciboInsertarDetalleReciboAsync(CapaPresentacion.wsDetalleRecibo.DetalleRecibo,System.Object)">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsDetalleRecibo.wsTbDetalleRecibo.TbDetalleReciboActualizarDetalleRecibo(CapaPresentacion.wsDetalleRecibo.DetalleRecibo)">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsDetalleRecibo.wsTbDetalleRecibo.TbDetalleReciboActualizarDetalleReciboAsync(CapaPresentacion.wsDetalleRecibo.DetalleRecibo)">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsDetalleRecibo.wsTbDetalleRecibo.TbDetalleReciboActualizarDetalleReciboAsync(CapaPresentacion.wsDetalleRecibo.DetalleRecibo,System.Object)">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsDetalleRecibo.wsTbDetalleRecibo.TbDetalleReciboEliminarDetalleRecibo(CapaPresentacion.wsDetalleRecibo.DetalleRecibo)">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsDetalleRecibo.wsTbDetalleRecibo.TbDetalleReciboEliminarDetalleReciboAsync(CapaPresentacion.wsDetalleRecibo.DetalleRecibo)">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsDetalleRecibo.wsTbDetalleRecibo.TbDetalleReciboEliminarDetalleReciboAsync(CapaPresentacion.wsDetalleRecibo.DetalleRecibo,System.Object)">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsDetalleRecibo.wsTbDetalleRecibo.CancelAsync(System.Object)">
+	<remarks/>
+</member><member name="T:CapaPresentacion.wsDetalleRecibo.wsTbDetalleRecibo">
+	<remarks/>
+</member><member name="P:CapaPresentacion.wsDetalleRecibo.DetalleRecibo.IdRecibo">
+	<comentarios/>
+</member><member name="P:CapaPresentacion.wsDetalleRecibo.DetalleRecibo.IdDetalleRecibo">
+	<comentarios/>
+</member><member name="P:CapaPresentacion.wsDetalleRecibo.DetalleRecibo.IdFactura">
+	<comentarios/>
+</member><member name="P:CapaPresentacion.wsDetalleRecibo.DetalleRecibo.MontoCancelado">
+	<comentarios/>
+</member><member name="T:CapaPresentacion.wsDetalleRecibo.DetalleRecibo">
+	<comentarios/>
+</member><member name="T:CapaPresentacion.wsDetalleRecibo.TbDetalleReciboConsultarDetallesReciboCompletedEventHandler">
+	<remarks/>
+</member><member name="P:CapaPresentacion.wsDetalleRecibo.TbDetalleReciboConsultarDetallesReciboCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:CapaPresentacion.wsDetalleRecibo.TbDetalleReciboConsultarDetallesReciboCompletedEventArgs">
+	<remarks/>
+</member><member name="T:CapaPresentacion.wsDetalleRecibo.TbDetalleReciboConsultarDetalleReciboCompletedEventHandler">
+	<remarks/>
+</member><member name="P:CapaPresentacion.wsDetalleRecibo.TbDetalleReciboConsultarDetalleReciboCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:CapaPresentacion.wsDetalleRecibo.TbDetalleReciboConsultarDetalleReciboCompletedEventArgs">
+	<remarks/>
+</member><member name="T:CapaPresentacion.wsDetalleRecibo.TbDetalleReciboInsertarDetalleReciboCompletedEventHandler">
+	<remarks/>
+</member><member name="P:CapaPresentacion.wsDetalleRecibo.TbDetalleReciboInsertarDetalleReciboCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:CapaPresentacion.wsDetalleRecibo.TbDetalleReciboInsertarDetalleReciboCompletedEventArgs">
+	<remarks/>
+</member><member name="T:CapaPresentacion.wsDetalleRecibo.TbDetalleReciboActualizarDetalleReciboCompletedEventHandler">
+	<remarks/>
+</member><member name="P:CapaPresentacion.wsDetalleRecibo.TbDetalleReciboActualizarDetalleReciboCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:CapaPresentacion.wsDetalleRecibo.TbDetalleReciboActualizarDetalleReciboCompletedEventArgs">
+	<remarks/>
+</member><member name="T:CapaPresentacion.wsDetalleRecibo.TbDetalleReciboEliminarDetalleReciboCompletedEventHandler">
+	<remarks/>
+</member><member name="P:CapaPresentacion.wsDetalleRecibo.TbDetalleReciboEliminarDetalleReciboCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:CapaPresentacion.wsDetalleRecibo.TbDetalleReciboEliminarDetalleReciboCompletedEventArgs">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsImpuesto.wsTbImpuesto.#ctor">
+	<remarks/>
+</member><member name="E:CapaPresentacion.wsImpuesto.wsTbImpuesto.TbImpuestoConsultarImpuestosCompleted">
+	<remarks/>
+</member><member name="E:CapaPresentacion.wsImpuesto.wsTbImpuesto.TbImpuestoConsultarImpuestosFiltrosCompleted">
+	<remarks/>
+</member><member name="E:CapaPresentacion.wsImpuesto.wsTbImpuesto.TbImpuestoConsultarImpuestoBusquedaMantenimientoCompleted">
+	<remarks/>
+</member><member name="E:CapaPresentacion.wsImpuesto.wsTbImpuesto.TbImpuestoInsertarImpuestoCompleted">
+	<remarks/>
+</member><member name="E:CapaPresentacion.wsImpuesto.wsTbImpuesto.TbImpuestoActualizarImpuestoCompleted">
+	<remarks/>
+</member><member name="E:CapaPresentacion.wsImpuesto.wsTbImpuesto.TbIMpuestoEliminarImpuestoCompleted">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsImpuesto.wsTbImpuesto.TbImpuestoConsultarImpuestos">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsImpuesto.wsTbImpuesto.TbImpuestoConsultarImpuestosAsync">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsImpuesto.wsTbImpuesto.TbImpuestoConsultarImpuestosAsync(System.Object)">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsImpuesto.wsTbImpuesto.TbImpuestoConsultarImpuestosFiltros(System.String,System.Double)">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsImpuesto.wsTbImpuesto.TbImpuestoConsultarImpuestosFiltrosAsync(System.String,System.Double)">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsImpuesto.wsTbImpuesto.TbImpuestoConsultarImpuestosFiltrosAsync(System.String,System.Double,System.Object)">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsImpuesto.wsTbImpuesto.TbImpuestoConsultarImpuestoBusquedaMantenimiento(CapaPresentacion.wsImpuesto.Impuesto)">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsImpuesto.wsTbImpuesto.TbImpuestoConsultarImpuestoBusquedaMantenimientoAsync(CapaPresentacion.wsImpuesto.Impuesto)">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsImpuesto.wsTbImpuesto.TbImpuestoConsultarImpuestoBusquedaMantenimientoAsync(CapaPresentacion.wsImpuesto.Impuesto,System.Object)">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsImpuesto.wsTbImpuesto.TbImpuestoInsertarImpuesto(CapaPresentacion.wsImpuesto.Impuesto)">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsImpuesto.wsTbImpuesto.TbImpuestoInsertarImpuestoAsync(CapaPresentacion.wsImpuesto.Impuesto)">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsImpuesto.wsTbImpuesto.TbImpuestoInsertarImpuestoAsync(CapaPresentacion.wsImpuesto.Impuesto,System.Object)">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsImpuesto.wsTbImpuesto.TbImpuestoActualizarImpuesto(CapaPresentacion.wsImpuesto.Impuesto)">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsImpuesto.wsTbImpuesto.TbImpuestoActualizarImpuestoAsync(CapaPresentacion.wsImpuesto.Impuesto)">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsImpuesto.wsTbImpuesto.TbImpuestoActualizarImpuestoAsync(CapaPresentacion.wsImpuesto.Impuesto,System.Object)">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsImpuesto.wsTbImpuesto.TbIMpuestoEliminarImpuesto(CapaPresentacion.wsImpuesto.Impuesto)">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsImpuesto.wsTbImpuesto.TbIMpuestoEliminarImpuestoAsync(CapaPresentacion.wsImpuesto.Impuesto)">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsImpuesto.wsTbImpuesto.TbIMpuestoEliminarImpuestoAsync(CapaPresentacion.wsImpuesto.Impuesto,System.Object)">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsImpuesto.wsTbImpuesto.CancelAsync(System.Object)">
+	<remarks/>
+</member><member name="T:CapaPresentacion.wsImpuesto.wsTbImpuesto">
+	<remarks/>
+</member><member name="P:CapaPresentacion.wsImpuesto.Impuesto.IdImpuesto">
+	<comentarios/>
+</member><member name="P:CapaPresentacion.wsImpuesto.Impuesto.Descripcion">
+	<comentarios/>
+</member><member name="P:CapaPresentacion.wsImpuesto.Impuesto.PorcentajeImpuesto">
+	<comentarios/>
+</member><member name="T:CapaPresentacion.wsImpuesto.Impuesto">
+	<comentarios/>
+</member><member name="T:CapaPresentacion.wsImpuesto.TbImpuestoConsultarImpuestosCompletedEventHandler">
+	<remarks/>
+</member><member name="P:CapaPresentacion.wsImpuesto.TbImpuestoConsultarImpuestosCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:CapaPresentacion.wsImpuesto.TbImpuestoConsultarImpuestosCompletedEventArgs">
+	<remarks/>
+</member><member name="T:CapaPresentacion.wsImpuesto.TbImpuestoConsultarImpuestosFiltrosCompletedEventHandler">
+	<remarks/>
+</member><member name="P:CapaPresentacion.wsImpuesto.TbImpuestoConsultarImpuestosFiltrosCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:CapaPresentacion.wsImpuesto.TbImpuestoConsultarImpuestosFiltrosCompletedEventArgs">
+	<remarks/>
+</member><member name="T:CapaPresentacion.wsImpuesto.TbImpuestoConsultarImpuestoBusquedaMantenimientoCompletedEventHandler">
+	<remarks/>
+</member><member name="P:CapaPresentacion.wsImpuesto.TbImpuestoConsultarImpuestoBusquedaMantenimientoCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:CapaPresentacion.wsImpuesto.TbImpuestoConsultarImpuestoBusquedaMantenimientoCompletedEventArgs">
+	<remarks/>
+</member><member name="T:CapaPresentacion.wsImpuesto.TbImpuestoInsertarImpuestoCompletedEventHandler">
+	<remarks/>
+</member><member name="P:CapaPresentacion.wsImpuesto.TbImpuestoInsertarImpuestoCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:CapaPresentacion.wsImpuesto.TbImpuestoInsertarImpuestoCompletedEventArgs">
+	<remarks/>
+</member><member name="T:CapaPresentacion.wsImpuesto.TbImpuestoActualizarImpuestoCompletedEventHandler">
+	<remarks/>
+</member><member name="P:CapaPresentacion.wsImpuesto.TbImpuestoActualizarImpuestoCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:CapaPresentacion.wsImpuesto.TbImpuestoActualizarImpuestoCompletedEventArgs">
+	<remarks/>
+</member><member name="T:CapaPresentacion.wsImpuesto.TbIMpuestoEliminarImpuestoCompletedEventHandler">
+	<remarks/>
+</member><member name="P:CapaPresentacion.wsImpuesto.TbIMpuestoEliminarImpuestoCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:CapaPresentacion.wsImpuesto.TbIMpuestoEliminarImpuestoCompletedEventArgs">
+	<remarks/>
+</member><member name="T:CapaPresentacion.DataSetFacturas.SP_Reporte_FacturasDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:CapaPresentacion.DataSetFacturas.SP_Reporte_FacturasRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:CapaPresentacion.DataSetFacturas.SP_Reporte_FacturasRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:CapaPresentacion.DataSetFacturas">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:CapaPresentacion.DataSetFacturasTableAdapters.SP_Reporte_FacturasTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:CapaPresentacion.DataSetFacturasTableAdapters.TableAdapterManager.UpdateUpdatedRows(CapaPresentacion.DataSetFacturas,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:CapaPresentacion.DataSetFacturasTableAdapters.TableAdapterManager.UpdateInsertedRows(CapaPresentacion.DataSetFacturas,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:CapaPresentacion.DataSetFacturasTableAdapters.TableAdapterManager.UpdateDeletedRows(CapaPresentacion.DataSetFacturas,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:CapaPresentacion.DataSetFacturasTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:CapaPresentacion.DataSetFacturasTableAdapters.TableAdapterManager.UpdateAll(CapaPresentacion.DataSetFacturas)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:CapaPresentacion.DataSetFacturasTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:CapaPresentacion.DataSetFacturasTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:CapaPresentacion.DataSetFacturasTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="F:CapaPresentacion.ServiciosABCCliente.contentHeader">
+	<summary>
+Control contentHeader.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.ServiciosABCCliente.form1">
+	<summary>
+Control form1.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.ServiciosABCCliente.ScriptManagerCliente">
+	<summary>
+Control ScriptManagerCliente.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.ServiciosABCCliente.lbNombreUsuario">
+	<summary>
+Control lbNombreUsuario.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.ServiciosABCCliente.contentPage">
+	<summary>
+Control contentPage.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.ServiciosABCCliente.contentFooter">
+	<summary>
+Control contentFooter.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.cambiar_contrasena.pnErrorContraseñasFail">
+	<summary>
+Control pnErrorContraseñasFail.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.cambiar_contrasena.lbErrorContraseñasFail">
+	<summary>
+Control lbErrorContraseñasFail.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.cambiar_contrasena.pnErrorContraseñasSuccess">
+	<summary>
+Control pnErrorContraseñasSuccess.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.cambiar_contrasena.lbErrorContraseñasSuccess">
+	<summary>
+Control lbErrorContraseñasSuccess.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.cambiar_contrasena.txtContraseñaAnterior">
+	<summary>
+Control txtContraseñaAnterior.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.cambiar_contrasena.txtContraseñaNueva">
+	<summary>
+Control txtContraseñaNueva.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.cambiar_contrasena.txtContraseñaNuevaConfirmar">
+	<summary>
+Control txtContraseñaNuevaConfirmar.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.cambiar_contrasena.btnLimpiar">
+	<summary>
+Control btnLimpiar.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.cambiar_contrasena.btnRecordar">
+	<summary>
+Control btnRecordar.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.listadoFacturas.txtIdFactura">
+	<summary>
+Control txtIdFactura.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.listadoFacturas.txtNombreCliente">
+	<summary>
+Control txtNombreCliente.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.listadoFacturas.imgbtnBuscar">
+	<summary>
+Control imgbtnBuscar.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.listadoFacturas.imgbtnLimpiar">
+	<summary>
+Control imgbtnLimpiar.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.listadoFacturas.imgbtnAgregar">
+	<summary>
+Control imgbtnAgregar.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.listadoFacturas.updatePanelListaFacturas">
+	<summary>
+Control updatePanelListaFacturas.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.listadoFacturas.pnGridViewSinDatos">
+	<summary>
+Control pnGridViewSinDatos.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.listadoFacturas.lbGridViewSinDatos">
+	<summary>
+Control lbGridViewSinDatos.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.listadoFacturas.grdListaFacturas">
+	<summary>
+Control grdListaFacturas.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.maImpuestos.pnErrorInicioSesion">
+	<summary>
+Control pnErrorInicioSesion.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.maImpuestos.lbErrorInicioSesion">
+	<summary>
+Control lbErrorInicioSesion.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.maImpuestos.txtDescripcion">
+	<summary>
+Control txtDescripcion.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.maImpuestos.txtPorcentajeImpuesto">
+	<summary>
+Control txtPorcentajeImpuesto.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.maImpuestos.hlRegresar">
+	<summary>
+Control hlRegresar.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.maImpuestos.btnLimpiar">
+	<summary>
+Control btnLimpiar.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.maImpuestos.btnAccion">
+	<summary>
+Control btnAccion.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.rptEstadoCuenta.imgbtnGenerarReporte">
+	<summary>
+Control imgbtnGenerarReporte.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="P:CapaPresentacion.My.MyWebExtension.Application">
+	<summary>
+ Devuelve información sobre la aplicación actual.
+ </summary>
+</member><member name="P:CapaPresentacion.My.MyWebExtension.Computer">
+	<summary>
+ Devuelve información sobre el equipo host.
+ </summary>
+</member><member name="P:CapaPresentacion.My.MyWebExtension.User">
+	<summary>
+ Devuelve información del usuario web actual.
+ </summary>
+</member><member name="P:CapaPresentacion.My.MyWebExtension.Request">
+	<summary>
+ Devuelve un objeto Request.
+ </summary>
+</member><member name="P:CapaPresentacion.My.MyWebExtension.Response">
+	<summary>
+ Devuelve un objeto Response.
+ </summary>
+</member><member name="P:CapaPresentacion.My.MyWebExtension.Log">
+	<summary>
+ Devuelve el objeto de registro Asp.
+ </summary>
+</member><member name="P:CapaPresentacion.My.MyWebExtension.WebServices">
+	<summary>
+ Proporciona acceso a los servicios Web agregados a este proyecto.
+ </summary>
+</member><member name="T:CapaPresentacion.My.MyWebExtension">
+	<summary>
+ Módulo usado para definir las propiedades que están disponibles en el espacio de nombres My para proyectos web.
+ </summary>
+	<remarks></remarks>
+</member><member name="F:CapaPresentacion.maUsuarios.pnErrorInicioSesion">
+	<summary>
+Control pnErrorInicioSesion.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.maUsuarios.lbErrorInicioSesion">
+	<summary>
+Control lbErrorInicioSesion.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.maUsuarios.txtCorreo">
+	<summary>
+Control txtCorreo.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.maUsuarios.txtCedula">
+	<summary>
+Control txtCedula.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.maUsuarios.txtNombreUsuario">
+	<summary>
+Control txtNombreUsuario.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.maUsuarios.txtPrimerApellido">
+	<summary>
+Control txtPrimerApellido.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.maUsuarios.txtSegundoApellido">
+	<summary>
+Control txtSegundoApellido.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.maUsuarios.txtFechaNacimiento">
+	<summary>
+Control txtFechaNacimiento.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.maUsuarios.txtDireccion">
+	<summary>
+Control txtDireccion.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.maUsuarios.txtTelefono">
+	<summary>
+Control txtTelefono.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.maUsuarios.ddlSexo">
+	<summary>
+Control ddlSexo.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.maUsuarios.txtContraseña">
+	<summary>
+Control txtContraseña.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.maUsuarios.txtContraseñaConfirmar">
+	<summary>
+Control txtContraseñaConfirmar.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.maUsuarios.ddlRol">
+	<summary>
+Control ddlRol.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.maUsuarios.ddlEstado">
+	<summary>
+Control ddlEstado.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.maUsuarios.hlRegresar">
+	<summary>
+Control hlRegresar.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.maUsuarios.btnLimpiar">
+	<summary>
+Control btnLimpiar.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.maUsuarios.btnAccion">
+	<summary>
+Control btnAccion.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.rptRecibosImpresos.TB_FechIni">
+	<summary>
+TB_Fecha1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:CapaPresentacion.rptRecibosImpresos.TB_FechFin">
+	<summary>
+TB_Fecha2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:CapaPresentacion.rptRecibosImpresos.BT_Generar">
+	<summary>
+BT_Generar control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:CapaPresentacion.rptRecibosImpresos.ReporteRecibos">
+	<summary>
+ReporteRecibos control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="M:CapaPresentacion.wsServicio.wsTbServicio.#ctor">
+	<remarks/>
+</member><member name="E:CapaPresentacion.wsServicio.wsTbServicio.TbServicioConsultarServiciosCompleted">
+	<remarks/>
+</member><member name="E:CapaPresentacion.wsServicio.wsTbServicio.TbServicioConsultarServicioCompleted">
+	<remarks/>
+</member><member name="E:CapaPresentacion.wsServicio.wsTbServicio.TbServicioConsultarServiciosFiltrosCompleted">
+	<remarks/>
+</member><member name="E:CapaPresentacion.wsServicio.wsTbServicio.TbServicioInsertarServicioCompleted">
+	<remarks/>
+</member><member name="E:CapaPresentacion.wsServicio.wsTbServicio.TbServicioActualizarServicioCompleted">
+	<remarks/>
+</member><member name="E:CapaPresentacion.wsServicio.wsTbServicio.TbServicioEliminarServicioCompleted">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsServicio.wsTbServicio.TbServicioConsultarServicios">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsServicio.wsTbServicio.TbServicioConsultarServiciosAsync">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsServicio.wsTbServicio.TbServicioConsultarServiciosAsync(System.Object)">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsServicio.wsTbServicio.TbServicioConsultarServicio(CapaPresentacion.wsServicio.Servicio)">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsServicio.wsTbServicio.TbServicioConsultarServicioAsync(CapaPresentacion.wsServicio.Servicio)">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsServicio.wsTbServicio.TbServicioConsultarServicioAsync(CapaPresentacion.wsServicio.Servicio,System.Object)">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsServicio.wsTbServicio.TbServicioConsultarServiciosFiltros(System.String,System.Double)">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsServicio.wsTbServicio.TbServicioConsultarServiciosFiltrosAsync(System.String,System.Double)">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsServicio.wsTbServicio.TbServicioConsultarServiciosFiltrosAsync(System.String,System.Double,System.Object)">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsServicio.wsTbServicio.TbServicioInsertarServicio(CapaPresentacion.wsServicio.Servicio)">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsServicio.wsTbServicio.TbServicioInsertarServicioAsync(CapaPresentacion.wsServicio.Servicio)">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsServicio.wsTbServicio.TbServicioInsertarServicioAsync(CapaPresentacion.wsServicio.Servicio,System.Object)">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsServicio.wsTbServicio.TbServicioActualizarServicio(CapaPresentacion.wsServicio.Servicio)">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsServicio.wsTbServicio.TbServicioActualizarServicioAsync(CapaPresentacion.wsServicio.Servicio)">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsServicio.wsTbServicio.TbServicioActualizarServicioAsync(CapaPresentacion.wsServicio.Servicio,System.Object)">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsServicio.wsTbServicio.TbServicioEliminarServicio(CapaPresentacion.wsServicio.Servicio)">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsServicio.wsTbServicio.TbServicioEliminarServicioAsync(CapaPresentacion.wsServicio.Servicio)">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsServicio.wsTbServicio.TbServicioEliminarServicioAsync(CapaPresentacion.wsServicio.Servicio,System.Object)">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsServicio.wsTbServicio.CancelAsync(System.Object)">
+	<remarks/>
+</member><member name="T:CapaPresentacion.wsServicio.wsTbServicio">
+	<remarks/>
+</member><member name="P:CapaPresentacion.wsServicio.Servicio.IdServicio">
+	<comentarios/>
+</member><member name="P:CapaPresentacion.wsServicio.Servicio.Descripcion">
+	<comentarios/>
+</member><member name="P:CapaPresentacion.wsServicio.Servicio.PrecioUnitario">
+	<comentarios/>
+</member><member name="P:CapaPresentacion.wsServicio.Servicio.IdImpuesto">
+	<comentarios/>
+</member><member name="P:CapaPresentacion.wsServicio.Servicio.IdEstado">
+	<comentarios/>
+</member><member name="T:CapaPresentacion.wsServicio.Servicio">
+	<comentarios/>
+</member><member name="T:CapaPresentacion.wsServicio.TbServicioConsultarServiciosCompletedEventHandler">
+	<remarks/>
+</member><member name="P:CapaPresentacion.wsServicio.TbServicioConsultarServiciosCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:CapaPresentacion.wsServicio.TbServicioConsultarServiciosCompletedEventArgs">
+	<remarks/>
+</member><member name="T:CapaPresentacion.wsServicio.TbServicioConsultarServicioCompletedEventHandler">
+	<remarks/>
+</member><member name="P:CapaPresentacion.wsServicio.TbServicioConsultarServicioCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:CapaPresentacion.wsServicio.TbServicioConsultarServicioCompletedEventArgs">
+	<remarks/>
+</member><member name="T:CapaPresentacion.wsServicio.TbServicioConsultarServiciosFiltrosCompletedEventHandler">
+	<remarks/>
+</member><member name="P:CapaPresentacion.wsServicio.TbServicioConsultarServiciosFiltrosCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:CapaPresentacion.wsServicio.TbServicioConsultarServiciosFiltrosCompletedEventArgs">
+	<remarks/>
+</member><member name="T:CapaPresentacion.wsServicio.TbServicioInsertarServicioCompletedEventHandler">
+	<remarks/>
+</member><member name="P:CapaPresentacion.wsServicio.TbServicioInsertarServicioCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:CapaPresentacion.wsServicio.TbServicioInsertarServicioCompletedEventArgs">
+	<remarks/>
+</member><member name="T:CapaPresentacion.wsServicio.TbServicioActualizarServicioCompletedEventHandler">
+	<remarks/>
+</member><member name="P:CapaPresentacion.wsServicio.TbServicioActualizarServicioCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:CapaPresentacion.wsServicio.TbServicioActualizarServicioCompletedEventArgs">
+	<remarks/>
+</member><member name="T:CapaPresentacion.wsServicio.TbServicioEliminarServicioCompletedEventHandler">
+	<remarks/>
+</member><member name="P:CapaPresentacion.wsServicio.TbServicioEliminarServicioCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:CapaPresentacion.wsServicio.TbServicioEliminarServicioCompletedEventArgs">
+	<remarks/>
+</member><member name="F:CapaPresentacion.listadoFacturasImpresas.txtIdFactura">
+	<summary>
+Control txtIdFactura.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.listadoFacturasImpresas.txtNombreCliente">
+	<summary>
+Control txtNombreCliente.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.listadoFacturasImpresas.imgbtnBuscar">
+	<summary>
+Control imgbtnBuscar.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.listadoFacturasImpresas.imgbtnLimpiar">
+	<summary>
+Control imgbtnLimpiar.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.listadoFacturasImpresas.updatePanelListaFacturas">
+	<summary>
+Control updatePanelListaFacturas.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.listadoFacturasImpresas.pnGridViewSinDatos">
+	<summary>
+Control pnGridViewSinDatos.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.listadoFacturasImpresas.lbGridViewSinDatos">
+	<summary>
+Control lbGridViewSinDatos.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.listadoFacturasImpresas.grdListaFacturas">
+	<summary>
+Control grdListaFacturas.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.listadoImpuestos.txtDescripcionBusqueda">
+	<summary>
+Control txtDescripcionBusqueda.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.listadoImpuestos.txtPorcentajeBusqueda">
+	<summary>
+Control txtPorcentajeBusqueda.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.listadoImpuestos.imgbtnBuscar">
+	<summary>
+Control imgbtnBuscar.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.listadoImpuestos.imgbtnLimpiar">
+	<summary>
+Control imgbtnLimpiar.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.listadoImpuestos.imgbtnAgregar">
+	<summary>
+Control imgbtnAgregar.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.listadoImpuestos.updatePanelListaImpuestos">
+	<summary>
+Control updatePanelListaImpuestos.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.listadoImpuestos.pnGridViewSinDatos">
+	<summary>
+Control pnGridViewSinDatos.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.listadoImpuestos.lbGridViewSinDatos">
+	<summary>
+Control lbGridViewSinDatos.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.listadoImpuestos.grdListaImpuestos">
+	<summary>
+Control grdListaImpuestos.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.listadoUsuarios.txtCedulaBusqueda">
+	<summary>
+Control txtCedulaBusqueda.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.listadoUsuarios.txtNombreUsuarioBusqueda">
+	<summary>
+Control txtNombreUsuarioBusqueda.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.listadoUsuarios.imgbtnBuscar">
+	<summary>
+Control imgbtnBuscar.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.listadoUsuarios.imgbtnLimpiar">
+	<summary>
+Control imgbtnLimpiar.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.listadoUsuarios.imgbtnAgregar">
+	<summary>
+Control imgbtnAgregar.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.listadoUsuarios.updatePanelListaUsuarios">
+	<summary>
+Control updatePanelListaUsuarios.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.listadoUsuarios.pnGridViewSinDatos">
+	<summary>
+Control pnGridViewSinDatos.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.listadoUsuarios.lbGridViewSinDatos">
+	<summary>
+Control lbGridViewSinDatos.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.listadoUsuarios.grdListaUsuarios">
+	<summary>
+Control grdListaUsuarios.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="M:CapaPresentacion.wsRecibo.wsTbRecibo.#ctor">
+	<remarks/>
+</member><member name="E:CapaPresentacion.wsRecibo.wsTbRecibo.TbReciboConsultarRecibosCompleted">
+	<remarks/>
+</member><member name="E:CapaPresentacion.wsRecibo.wsTbRecibo.consultarReciboBusquedaMantenimientoCompleted">
+	<remarks/>
+</member><member name="E:CapaPresentacion.wsRecibo.wsTbRecibo.TbReciboConsultarReciboIDCompleted">
+	<remarks/>
+</member><member name="E:CapaPresentacion.wsRecibo.wsTbRecibo.TbReciboInsertarReciboCompleted">
+	<remarks/>
+</member><member name="E:CapaPresentacion.wsRecibo.wsTbRecibo.TbReciboActualizarReciboCompleted">
+	<remarks/>
+</member><member name="E:CapaPresentacion.wsRecibo.wsTbRecibo.TbReciboEliminarReciboCompleted">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsRecibo.wsTbRecibo.TbReciboConsultarRecibos">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsRecibo.wsTbRecibo.TbReciboConsultarRecibosAsync">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsRecibo.wsTbRecibo.TbReciboConsultarRecibosAsync(System.Object)">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsRecibo.wsTbRecibo.consultarReciboBusquedaMantenimiento(CapaPresentacion.wsRecibo.Recibo)">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsRecibo.wsTbRecibo.consultarReciboBusquedaMantenimientoAsync(CapaPresentacion.wsRecibo.Recibo)">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsRecibo.wsTbRecibo.consultarReciboBusquedaMantenimientoAsync(CapaPresentacion.wsRecibo.Recibo,System.Object)">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsRecibo.wsTbRecibo.TbReciboConsultarReciboID(CapaPresentacion.wsRecibo.Recibo)">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsRecibo.wsTbRecibo.TbReciboConsultarReciboIDAsync(CapaPresentacion.wsRecibo.Recibo)">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsRecibo.wsTbRecibo.TbReciboConsultarReciboIDAsync(CapaPresentacion.wsRecibo.Recibo,System.Object)">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsRecibo.wsTbRecibo.TbReciboInsertarRecibo(CapaPresentacion.wsRecibo.Recibo)">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsRecibo.wsTbRecibo.TbReciboInsertarReciboAsync(CapaPresentacion.wsRecibo.Recibo)">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsRecibo.wsTbRecibo.TbReciboInsertarReciboAsync(CapaPresentacion.wsRecibo.Recibo,System.Object)">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsRecibo.wsTbRecibo.TbReciboActualizarRecibo(CapaPresentacion.wsRecibo.Recibo)">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsRecibo.wsTbRecibo.TbReciboActualizarReciboAsync(CapaPresentacion.wsRecibo.Recibo)">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsRecibo.wsTbRecibo.TbReciboActualizarReciboAsync(CapaPresentacion.wsRecibo.Recibo,System.Object)">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsRecibo.wsTbRecibo.TbReciboEliminarRecibo(CapaPresentacion.wsRecibo.Recibo)">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsRecibo.wsTbRecibo.TbReciboEliminarReciboAsync(CapaPresentacion.wsRecibo.Recibo)">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsRecibo.wsTbRecibo.TbReciboEliminarReciboAsync(CapaPresentacion.wsRecibo.Recibo,System.Object)">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsRecibo.wsTbRecibo.CancelAsync(System.Object)">
+	<remarks/>
+</member><member name="T:CapaPresentacion.wsRecibo.wsTbRecibo">
+	<remarks/>
+</member><member name="P:CapaPresentacion.wsRecibo.Recibo.IdRecibo">
+	<comentarios/>
+</member><member name="P:CapaPresentacion.wsRecibo.Recibo.FechaEmision">
+	<comentarios/>
+</member><member name="P:CapaPresentacion.wsRecibo.Recibo.Correo">
+	<comentarios/>
+</member><member name="P:CapaPresentacion.wsRecibo.Recibo.Descripcion">
+	<comentarios/>
+</member><member name="P:CapaPresentacion.wsRecibo.Recibo.MontoTotal">
+	<comentarios/>
+</member><member name="P:CapaPresentacion.wsRecibo.Recibo.IdEstado">
+	<comentarios/>
+</member><member name="T:CapaPresentacion.wsRecibo.Recibo">
+	<comentarios/>
+</member><member name="T:CapaPresentacion.wsRecibo.TbReciboConsultarRecibosCompletedEventHandler">
+	<remarks/>
+</member><member name="P:CapaPresentacion.wsRecibo.TbReciboConsultarRecibosCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:CapaPresentacion.wsRecibo.TbReciboConsultarRecibosCompletedEventArgs">
+	<remarks/>
+</member><member name="T:CapaPresentacion.wsRecibo.consultarReciboBusquedaMantenimientoCompletedEventHandler">
+	<remarks/>
+</member><member name="P:CapaPresentacion.wsRecibo.consultarReciboBusquedaMantenimientoCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:CapaPresentacion.wsRecibo.consultarReciboBusquedaMantenimientoCompletedEventArgs">
+	<remarks/>
+</member><member name="T:CapaPresentacion.wsRecibo.TbReciboConsultarReciboIDCompletedEventHandler">
+	<remarks/>
+</member><member name="P:CapaPresentacion.wsRecibo.TbReciboConsultarReciboIDCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:CapaPresentacion.wsRecibo.TbReciboConsultarReciboIDCompletedEventArgs">
+	<remarks/>
+</member><member name="T:CapaPresentacion.wsRecibo.TbReciboInsertarReciboCompletedEventHandler">
+	<remarks/>
+</member><member name="P:CapaPresentacion.wsRecibo.TbReciboInsertarReciboCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:CapaPresentacion.wsRecibo.TbReciboInsertarReciboCompletedEventArgs">
+	<remarks/>
+</member><member name="T:CapaPresentacion.wsRecibo.TbReciboActualizarReciboCompletedEventHandler">
+	<remarks/>
+</member><member name="P:CapaPresentacion.wsRecibo.TbReciboActualizarReciboCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:CapaPresentacion.wsRecibo.TbReciboActualizarReciboCompletedEventArgs">
+	<remarks/>
+</member><member name="T:CapaPresentacion.wsRecibo.TbReciboEliminarReciboCompletedEventHandler">
+	<remarks/>
+</member><member name="P:CapaPresentacion.wsRecibo.TbReciboEliminarReciboCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:CapaPresentacion.wsRecibo.TbReciboEliminarReciboCompletedEventArgs">
+	<remarks/>
+</member><member name="F:CapaPresentacion.maClientes.pnErrorInicioSesion">
+	<summary>
+Control pnErrorInicioSesion.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.maClientes.lbErrorInicioSesion">
+	<summary>
+Control lbErrorInicioSesion.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.maClientes.txtCorreo">
+	<summary>
+Control txtCorreo.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.maClientes.txtCedula">
+	<summary>
+Control txtCedula.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.maClientes.txtNombreUsuario">
+	<summary>
+Control txtNombreUsuario.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.maClientes.txtPrimerApellido">
+	<summary>
+Control txtPrimerApellido.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.maClientes.txtSegundoApellido">
+	<summary>
+Control txtSegundoApellido.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.maClientes.txtFechaNacimiento">
+	<summary>
+Control txtFechaNacimiento.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.maClientes.txtDireccion">
+	<summary>
+Control txtDireccion.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.maClientes.txtTelefono">
+	<summary>
+Control txtTelefono.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.maClientes.ddlSexo">
+	<summary>
+Control ddlSexo.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.maClientes.txtContraseña">
+	<summary>
+Control txtContraseña.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.maClientes.txtContraseñaConfirmar">
+	<summary>
+Control txtContraseñaConfirmar.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.maClientes.txtRol">
+	<summary>
+Control txtRol.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.maClientes.ddlEstado">
+	<summary>
+Control ddlEstado.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.maClientes.hlRegresar">
+	<summary>
+Control hlRegresar.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.maClientes.btnLimpiar">
+	<summary>
+Control btnLimpiar.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.maClientes.btnAccion">
+	<summary>
+Control btnAccion.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.recordar_contrasena.pnErrorInicioSesionFail">
+	<summary>
+Control pnErrorInicioSesionFail.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.recordar_contrasena.lbErrorInicioSesionFail">
+	<summary>
+Control lbErrorInicioSesionFail.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.recordar_contrasena.pnErrorInicioSesionSuccess">
+	<summary>
+Control pnErrorInicioSesionSuccess.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.recordar_contrasena.lbErrorInicioSesionSuccess">
+	<summary>
+Control lbErrorInicioSesionSuccess.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.recordar_contrasena.txtCorreo">
+	<summary>
+Control txtCorreo.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.recordar_contrasena.txtCedula">
+	<summary>
+Control txtCedula.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.recordar_contrasena.hlRegresar">
+	<summary>
+Control hlRegresar.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.recordar_contrasena.btnLimpiar">
+	<summary>
+Control btnLimpiar.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.recordar_contrasena.btnRecordar">
+	<summary>
+Control btnRecordar.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.ServiciosABC.Head1">
+	<summary>
+Control Head1.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.ServiciosABC.contentHeader">
+	<summary>
+Control contentHeader.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.ServiciosABC.form1">
+	<summary>
+Control form1.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.ServiciosABC.ScriptManager1">
+	<summary>
+Control ScriptManager1.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.ServiciosABC.contentPage">
+	<summary>
+Control contentPage.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.ServiciosABC.contentFooter">
+	<summary>
+Control contentFooter.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.listadoClientes.txtCedulaBusqueda">
+	<summary>
+Control txtCedulaBusqueda.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.listadoClientes.txtNombreUsuarioBusqueda">
+	<summary>
+Control txtNombreUsuarioBusqueda.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.listadoClientes.imgbtnBuscar">
+	<summary>
+Control imgbtnBuscar.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.listadoClientes.imgbtnLimpiar">
+	<summary>
+Control imgbtnLimpiar.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.listadoClientes.imgbtnAgregar">
+	<summary>
+Control imgbtnAgregar.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.listadoClientes.updatePanelListaClientes">
+	<summary>
+Control updatePanelListaClientes.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.listadoClientes.pnGridViewSinDatos">
+	<summary>
+Control pnGridViewSinDatos.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.listadoClientes.lbGridViewSinDatos">
+	<summary>
+Control lbGridViewSinDatos.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.listadoClientes.grdListaClientes">
+	<summary>
+Control grdListaClientes.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="M:CapaPresentacion.wsPersona.wsTbPersona.#ctor">
+	<remarks/>
+</member><member name="E:CapaPresentacion.wsPersona.wsTbPersona.TbPersonaConsultarPersonasCompleted">
+	<remarks/>
+</member><member name="E:CapaPresentacion.wsPersona.wsTbPersona.TbPersonaConsultarClientesCompleted">
+	<remarks/>
+</member><member name="E:CapaPresentacion.wsPersona.wsTbPersona.TbPersonaConsultarPersonasFiltrosCompleted">
+	<remarks/>
+</member><member name="E:CapaPresentacion.wsPersona.wsTbPersona.TbPersonaConsultarClientesFiltrosCompleted">
+	<remarks/>
+</member><member name="E:CapaPresentacion.wsPersona.wsTbPersona.TbPersonaConsultarPersonaLoginCompleted">
+	<remarks/>
+</member><member name="E:CapaPresentacion.wsPersona.wsTbPersona.TbPersonaConsultarPersonaBusquedaContraseñaCompleted">
+	<remarks/>
+</member><member name="E:CapaPresentacion.wsPersona.wsTbPersona.TbPersonaConsultarPersonaBusquedaMantenimientoCompleted">
+	<remarks/>
+</member><member name="E:CapaPresentacion.wsPersona.wsTbPersona.TbPersonaInsertarPersonaCompleted">
+	<remarks/>
+</member><member name="E:CapaPresentacion.wsPersona.wsTbPersona.TbPersonaActualizarPersonaCompleted">
+	<remarks/>
+</member><member name="E:CapaPresentacion.wsPersona.wsTbPersona.TbPersonaActualizarPersonaContraseñaCompleted">
+	<remarks/>
+</member><member name="E:CapaPresentacion.wsPersona.wsTbPersona.TbPersonaEliminarPersonaCompleted">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsPersona.wsTbPersona.TbPersonaConsultarPersonas">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsPersona.wsTbPersona.TbPersonaConsultarPersonasAsync">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsPersona.wsTbPersona.TbPersonaConsultarPersonasAsync(System.Object)">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsPersona.wsTbPersona.TbPersonaConsultarClientes">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsPersona.wsTbPersona.TbPersonaConsultarClientesAsync">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsPersona.wsTbPersona.TbPersonaConsultarClientesAsync(System.Object)">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsPersona.wsTbPersona.TbPersonaConsultarPersonasFiltros(System.String,System.String)">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsPersona.wsTbPersona.TbPersonaConsultarPersonasFiltrosAsync(System.String,System.String)">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsPersona.wsTbPersona.TbPersonaConsultarPersonasFiltrosAsync(System.String,System.String,System.Object)">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsPersona.wsTbPersona.TbPersonaConsultarClientesFiltros(System.String,System.String)">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsPersona.wsTbPersona.TbPersonaConsultarClientesFiltrosAsync(System.String,System.String)">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsPersona.wsTbPersona.TbPersonaConsultarClientesFiltrosAsync(System.String,System.String,System.Object)">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsPersona.wsTbPersona.TbPersonaConsultarPersonaLogin(CapaPresentacion.wsPersona.Persona)">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsPersona.wsTbPersona.TbPersonaConsultarPersonaLoginAsync(CapaPresentacion.wsPersona.Persona)">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsPersona.wsTbPersona.TbPersonaConsultarPersonaLoginAsync(CapaPresentacion.wsPersona.Persona,System.Object)">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsPersona.wsTbPersona.TbPersonaConsultarPersonaBusquedaContraseña(CapaPresentacion.wsPersona.Persona)">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsPersona.wsTbPersona.TbPersonaConsultarPersonaBusquedaContraseñaAsync(CapaPresentacion.wsPersona.Persona)">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsPersona.wsTbPersona.TbPersonaConsultarPersonaBusquedaContraseñaAsync(CapaPresentacion.wsPersona.Persona,System.Object)">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsPersona.wsTbPersona.TbPersonaConsultarPersonaBusquedaMantenimiento(CapaPresentacion.wsPersona.Persona)">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsPersona.wsTbPersona.TbPersonaConsultarPersonaBusquedaMantenimientoAsync(CapaPresentacion.wsPersona.Persona)">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsPersona.wsTbPersona.TbPersonaConsultarPersonaBusquedaMantenimientoAsync(CapaPresentacion.wsPersona.Persona,System.Object)">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsPersona.wsTbPersona.TbPersonaInsertarPersona(CapaPresentacion.wsPersona.Persona)">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsPersona.wsTbPersona.TbPersonaInsertarPersonaAsync(CapaPresentacion.wsPersona.Persona)">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsPersona.wsTbPersona.TbPersonaInsertarPersonaAsync(CapaPresentacion.wsPersona.Persona,System.Object)">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsPersona.wsTbPersona.TbPersonaActualizarPersona(CapaPresentacion.wsPersona.Persona)">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsPersona.wsTbPersona.TbPersonaActualizarPersonaAsync(CapaPresentacion.wsPersona.Persona)">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsPersona.wsTbPersona.TbPersonaActualizarPersonaAsync(CapaPresentacion.wsPersona.Persona,System.Object)">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsPersona.wsTbPersona.TbPersonaActualizarPersonaContraseña(CapaPresentacion.wsPersona.Persona)">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsPersona.wsTbPersona.TbPersonaActualizarPersonaContraseñaAsync(CapaPresentacion.wsPersona.Persona)">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsPersona.wsTbPersona.TbPersonaActualizarPersonaContraseñaAsync(CapaPresentacion.wsPersona.Persona,System.Object)">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsPersona.wsTbPersona.TbPersonaEliminarPersona(CapaPresentacion.wsPersona.Persona)">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsPersona.wsTbPersona.TbPersonaEliminarPersonaAsync(CapaPresentacion.wsPersona.Persona)">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsPersona.wsTbPersona.TbPersonaEliminarPersonaAsync(CapaPresentacion.wsPersona.Persona,System.Object)">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsPersona.wsTbPersona.CancelAsync(System.Object)">
+	<remarks/>
+</member><member name="T:CapaPresentacion.wsPersona.wsTbPersona">
+	<remarks/>
+</member><member name="P:CapaPresentacion.wsPersona.Persona.Correo">
+	<comentarios/>
+</member><member name="P:CapaPresentacion.wsPersona.Persona.Cedula">
+	<comentarios/>
+</member><member name="P:CapaPresentacion.wsPersona.Persona.Nombre">
+	<comentarios/>
+</member><member name="P:CapaPresentacion.wsPersona.Persona.Apellido1">
+	<comentarios/>
+</member><member name="P:CapaPresentacion.wsPersona.Persona.Apellido2">
+	<comentarios/>
+</member><member name="P:CapaPresentacion.wsPersona.Persona.FechaNacimiento">
+	<comentarios/>
+</member><member name="P:CapaPresentacion.wsPersona.Persona.Direccion">
+	<comentarios/>
+</member><member name="P:CapaPresentacion.wsPersona.Persona.Telefono">
+	<comentarios/>
+</member><member name="P:CapaPresentacion.wsPersona.Persona.Sexo">
+	<comentarios/>
+</member><member name="P:CapaPresentacion.wsPersona.Persona.Contrasena">
+	<comentarios/>
+</member><member name="P:CapaPresentacion.wsPersona.Persona.IdRol">
+	<comentarios/>
+</member><member name="P:CapaPresentacion.wsPersona.Persona.IdEstado">
+	<comentarios/>
+</member><member name="T:CapaPresentacion.wsPersona.Persona">
+	<comentarios/>
+</member><member name="T:CapaPresentacion.wsPersona.TbPersonaConsultarPersonasCompletedEventHandler">
+	<remarks/>
+</member><member name="P:CapaPresentacion.wsPersona.TbPersonaConsultarPersonasCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:CapaPresentacion.wsPersona.TbPersonaConsultarPersonasCompletedEventArgs">
+	<remarks/>
+</member><member name="T:CapaPresentacion.wsPersona.TbPersonaConsultarClientesCompletedEventHandler">
+	<remarks/>
+</member><member name="P:CapaPresentacion.wsPersona.TbPersonaConsultarClientesCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:CapaPresentacion.wsPersona.TbPersonaConsultarClientesCompletedEventArgs">
+	<remarks/>
+</member><member name="T:CapaPresentacion.wsPersona.TbPersonaConsultarPersonasFiltrosCompletedEventHandler">
+	<remarks/>
+</member><member name="P:CapaPresentacion.wsPersona.TbPersonaConsultarPersonasFiltrosCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:CapaPresentacion.wsPersona.TbPersonaConsultarPersonasFiltrosCompletedEventArgs">
+	<remarks/>
+</member><member name="T:CapaPresentacion.wsPersona.TbPersonaConsultarClientesFiltrosCompletedEventHandler">
+	<remarks/>
+</member><member name="P:CapaPresentacion.wsPersona.TbPersonaConsultarClientesFiltrosCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:CapaPresentacion.wsPersona.TbPersonaConsultarClientesFiltrosCompletedEventArgs">
+	<remarks/>
+</member><member name="T:CapaPresentacion.wsPersona.TbPersonaConsultarPersonaLoginCompletedEventHandler">
+	<remarks/>
+</member><member name="P:CapaPresentacion.wsPersona.TbPersonaConsultarPersonaLoginCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:CapaPresentacion.wsPersona.TbPersonaConsultarPersonaLoginCompletedEventArgs">
+	<remarks/>
+</member><member name="T:CapaPresentacion.wsPersona.TbPersonaConsultarPersonaBusquedaContraseñaCompletedEventHandler">
+	<remarks/>
+</member><member name="P:CapaPresentacion.wsPersona.TbPersonaConsultarPersonaBusquedaContraseñaCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:CapaPresentacion.wsPersona.TbPersonaConsultarPersonaBusquedaContraseñaCompletedEventArgs">
+	<remarks/>
+</member><member name="T:CapaPresentacion.wsPersona.TbPersonaConsultarPersonaBusquedaMantenimientoCompletedEventHandler">
+	<remarks/>
+</member><member name="P:CapaPresentacion.wsPersona.TbPersonaConsultarPersonaBusquedaMantenimientoCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:CapaPresentacion.wsPersona.TbPersonaConsultarPersonaBusquedaMantenimientoCompletedEventArgs">
+	<remarks/>
+</member><member name="T:CapaPresentacion.wsPersona.TbPersonaInsertarPersonaCompletedEventHandler">
+	<remarks/>
+</member><member name="P:CapaPresentacion.wsPersona.TbPersonaInsertarPersonaCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:CapaPresentacion.wsPersona.TbPersonaInsertarPersonaCompletedEventArgs">
+	<remarks/>
+</member><member name="T:CapaPresentacion.wsPersona.TbPersonaActualizarPersonaCompletedEventHandler">
+	<remarks/>
+</member><member name="P:CapaPresentacion.wsPersona.TbPersonaActualizarPersonaCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:CapaPresentacion.wsPersona.TbPersonaActualizarPersonaCompletedEventArgs">
+	<remarks/>
+</member><member name="T:CapaPresentacion.wsPersona.TbPersonaActualizarPersonaContraseñaCompletedEventHandler">
+	<remarks/>
+</member><member name="P:CapaPresentacion.wsPersona.TbPersonaActualizarPersonaContraseñaCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:CapaPresentacion.wsPersona.TbPersonaActualizarPersonaContraseñaCompletedEventArgs">
+	<remarks/>
+</member><member name="T:CapaPresentacion.wsPersona.TbPersonaEliminarPersonaCompletedEventHandler">
+	<remarks/>
+</member><member name="P:CapaPresentacion.wsPersona.TbPersonaEliminarPersonaCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:CapaPresentacion.wsPersona.TbPersonaEliminarPersonaCompletedEventArgs">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsRol.wsTbRol.#ctor">
+	<remarks/>
+</member><member name="E:CapaPresentacion.wsRol.wsTbRol.TbRolConsultarRolesCompleted">
+	<remarks/>
+</member><member name="E:CapaPresentacion.wsRol.wsTbRol.TbRolConsultarRolCompleted">
+	<remarks/>
+</member><member name="E:CapaPresentacion.wsRol.wsTbRol.TbRolInsertarRolCompleted">
+	<remarks/>
+</member><member name="E:CapaPresentacion.wsRol.wsTbRol.TbRolActualizarRolCompleted">
+	<remarks/>
+</member><member name="E:CapaPresentacion.wsRol.wsTbRol.TbRolEliminarRolCompleted">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsRol.wsTbRol.TbRolConsultarRoles">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsRol.wsTbRol.TbRolConsultarRolesAsync">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsRol.wsTbRol.TbRolConsultarRolesAsync(System.Object)">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsRol.wsTbRol.TbRolConsultarRol(CapaPresentacion.wsRol.Rol)">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsRol.wsTbRol.TbRolConsultarRolAsync(CapaPresentacion.wsRol.Rol)">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsRol.wsTbRol.TbRolConsultarRolAsync(CapaPresentacion.wsRol.Rol,System.Object)">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsRol.wsTbRol.TbRolInsertarRol(CapaPresentacion.wsRol.Rol)">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsRol.wsTbRol.TbRolInsertarRolAsync(CapaPresentacion.wsRol.Rol)">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsRol.wsTbRol.TbRolInsertarRolAsync(CapaPresentacion.wsRol.Rol,System.Object)">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsRol.wsTbRol.TbRolActualizarRol(CapaPresentacion.wsRol.Rol)">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsRol.wsTbRol.TbRolActualizarRolAsync(CapaPresentacion.wsRol.Rol)">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsRol.wsTbRol.TbRolActualizarRolAsync(CapaPresentacion.wsRol.Rol,System.Object)">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsRol.wsTbRol.TbRolEliminarRol(CapaPresentacion.wsRol.Rol)">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsRol.wsTbRol.TbRolEliminarRolAsync(CapaPresentacion.wsRol.Rol)">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsRol.wsTbRol.TbRolEliminarRolAsync(CapaPresentacion.wsRol.Rol,System.Object)">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsRol.wsTbRol.CancelAsync(System.Object)">
+	<remarks/>
+</member><member name="T:CapaPresentacion.wsRol.wsTbRol">
+	<remarks/>
+</member><member name="P:CapaPresentacion.wsRol.Rol.IdRol">
+	<comentarios/>
+</member><member name="P:CapaPresentacion.wsRol.Rol.Descripcion">
+	<comentarios/>
+</member><member name="T:CapaPresentacion.wsRol.Rol">
+	<comentarios/>
+</member><member name="T:CapaPresentacion.wsRol.TbRolConsultarRolesCompletedEventHandler">
+	<remarks/>
+</member><member name="P:CapaPresentacion.wsRol.TbRolConsultarRolesCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:CapaPresentacion.wsRol.TbRolConsultarRolesCompletedEventArgs">
+	<remarks/>
+</member><member name="T:CapaPresentacion.wsRol.TbRolConsultarRolCompletedEventHandler">
+	<remarks/>
+</member><member name="P:CapaPresentacion.wsRol.TbRolConsultarRolCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:CapaPresentacion.wsRol.TbRolConsultarRolCompletedEventArgs">
+	<remarks/>
+</member><member name="T:CapaPresentacion.wsRol.TbRolInsertarRolCompletedEventHandler">
+	<remarks/>
+</member><member name="P:CapaPresentacion.wsRol.TbRolInsertarRolCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:CapaPresentacion.wsRol.TbRolInsertarRolCompletedEventArgs">
+	<remarks/>
+</member><member name="T:CapaPresentacion.wsRol.TbRolActualizarRolCompletedEventHandler">
+	<remarks/>
+</member><member name="P:CapaPresentacion.wsRol.TbRolActualizarRolCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:CapaPresentacion.wsRol.TbRolActualizarRolCompletedEventArgs">
+	<remarks/>
+</member><member name="T:CapaPresentacion.wsRol.TbRolEliminarRolCompletedEventHandler">
+	<remarks/>
+</member><member name="P:CapaPresentacion.wsRol.TbRolEliminarRolCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:CapaPresentacion.wsRol.TbRolEliminarRolCompletedEventArgs">
+	<remarks/>
+</member><member name="F:CapaPresentacion.ServiciosABCAgenteFacturas.contentHeader">
+	<summary>
+Control contentHeader.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.ServiciosABCAgenteFacturas.form1">
+	<summary>
+Control form1.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.ServiciosABCAgenteFacturas.ScriptManagerAgenteFacturas">
+	<summary>
+Control ScriptManagerAgenteFacturas.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.ServiciosABCAgenteFacturas.lbNombreUsuario">
+	<summary>
+Control lbNombreUsuario.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.ServiciosABCAgenteFacturas.contentPage">
+	<summary>
+Control contentPage.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.ServiciosABCAgenteFacturas.contentFooter">
+	<summary>
+Control contentFooter.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.ServiciosABCAgenteRecibos.contentHeader">
+	<summary>
+Control contentHeader.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.ServiciosABCAgenteRecibos.form1">
+	<summary>
+Control form1.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.ServiciosABCAgenteRecibos.ScriptManagerAgenteRecibos">
+	<summary>
+Control ScriptManagerAgenteRecibos.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.ServiciosABCAgenteRecibos.lbNombreUsuario">
+	<summary>
+Control lbNombreUsuario.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.ServiciosABCAgenteRecibos.contentPage">
+	<summary>
+Control contentPage.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.ServiciosABCAgenteRecibos.contentFooter">
+	<summary>
+Control contentFooter.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.registrar_usuario.pnErrorInicioSesionFail">
+	<summary>
+Control pnErrorInicioSesionFail.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.registrar_usuario.lbErrorInicioSesionFail">
+	<summary>
+Control lbErrorInicioSesionFail.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.registrar_usuario.pnErrorInicioSesionSuccess">
+	<summary>
+Control pnErrorInicioSesionSuccess.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.registrar_usuario.lbErrorInicioSesionSuccess">
+	<summary>
+Control lbErrorInicioSesionSuccess.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.registrar_usuario.txtCorreo">
+	<summary>
+Control txtCorreo.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.registrar_usuario.txtCedula">
+	<summary>
+Control txtCedula.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.registrar_usuario.txtNombreUsuario">
+	<summary>
+Control txtNombreUsuario.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.registrar_usuario.txtPrimerApellido">
+	<summary>
+Control txtPrimerApellido.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.registrar_usuario.txtSegundoApellido">
+	<summary>
+Control txtSegundoApellido.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.registrar_usuario.txtFechaNacimiento">
+	<summary>
+Control txtFechaNacimiento.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.registrar_usuario.txtDireccion">
+	<summary>
+Control txtDireccion.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.registrar_usuario.txtTelefono">
+	<summary>
+Control txtTelefono.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.registrar_usuario.ddlSexo">
+	<summary>
+Control ddlSexo.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.registrar_usuario.txtContraseña">
+	<summary>
+Control txtContraseña.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.registrar_usuario.txtContraseñaConfirmar">
+	<summary>
+Control txtContraseñaConfirmar.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.registrar_usuario.ddlRol">
+	<summary>
+Control ddlRol.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.registrar_usuario.ddlEstado">
+	<summary>
+Control ddlEstado.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.registrar_usuario.hlRegresar">
+	<summary>
+Control hlRegresar.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.registrar_usuario.btnLimpiar">
+	<summary>
+Control btnLimpiar.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.registrar_usuario.btnRegistrar">
+	<summary>
+Control btnRegistrar.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.rptFacturasImpresas.TB_FechIni">
+	<summary>
+Control TB_FechIni.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.rptFacturasImpresas.TB_FechFin">
+	<summary>
+Control TB_FechFin.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.rptFacturasImpresas.BT_Generar">
+	<summary>
+Control BT_Generar.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.rptFacturasImpresas.ReporteFacturas">
+	<summary>
+Control ReporteFacturas.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.rptFacturasImpresas.ObjectDataSource1">
+	<summary>
+Control ObjectDataSource1.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="M:CapaPresentacion.wsFactura.wsTbFactura.#ctor">
+	<remarks/>
+</member><member name="E:CapaPresentacion.wsFactura.wsTbFactura.TbFacturaConsultarFacturasCompleted">
+	<remarks/>
+</member><member name="E:CapaPresentacion.wsFactura.wsTbFactura.TbFacturaConsultarFacturasFiltrosCompleted">
+	<remarks/>
+</member><member name="E:CapaPresentacion.wsFactura.wsTbFactura.TbFacturaconsultarFacturasReportesCompleted">
+	<remarks/>
+</member><member name="E:CapaPresentacion.wsFactura.wsTbFactura.TbFacturaConsultarFacturaBusquedaMantenimientoCompleted">
+	<remarks/>
+</member><member name="E:CapaPresentacion.wsFactura.wsTbFactura.TbFacturaConsultarFacturaNumeroSiguienteCompleted">
+	<remarks/>
+</member><member name="E:CapaPresentacion.wsFactura.wsTbFactura.TbFacturaConsultarFacturaMontoTotalCompleted">
+	<remarks/>
+</member><member name="E:CapaPresentacion.wsFactura.wsTbFactura.TbFacturaInsertarFacturaCompleted">
+	<remarks/>
+</member><member name="E:CapaPresentacion.wsFactura.wsTbFactura.TbFacturaActualizarFacturaCompleted">
+	<remarks/>
+</member><member name="E:CapaPresentacion.wsFactura.wsTbFactura.TbFacturaActualizarFacturaMontoTotalCompleted">
+	<remarks/>
+</member><member name="E:CapaPresentacion.wsFactura.wsTbFactura.TbFacturaImprimirFacturaCompleted">
+	<remarks/>
+</member><member name="E:CapaPresentacion.wsFactura.wsTbFactura.TbFacturaAnularFacturaCompleted">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsFactura.wsTbFactura.TbFacturaConsultarFacturas(System.Int32)">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsFactura.wsTbFactura.TbFacturaConsultarFacturasAsync(System.Int32)">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsFactura.wsTbFactura.TbFacturaConsultarFacturasAsync(System.Int32,System.Object)">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsFactura.wsTbFactura.TbFacturaConsultarFacturasFiltros(System.Int32,System.String)">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsFactura.wsTbFactura.TbFacturaConsultarFacturasFiltrosAsync(System.Int32,System.String)">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsFactura.wsTbFactura.TbFacturaConsultarFacturasFiltrosAsync(System.Int32,System.String,System.Object)">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsFactura.wsTbFactura.TbFacturaconsultarFacturasReportes(CapaPresentacion.wsFactura.Persona,System.DateTime,System.DateTime)">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsFactura.wsTbFactura.TbFacturaconsultarFacturasReportesAsync(CapaPresentacion.wsFactura.Persona,System.DateTime,System.DateTime)">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsFactura.wsTbFactura.TbFacturaconsultarFacturasReportesAsync(CapaPresentacion.wsFactura.Persona,System.DateTime,System.DateTime,System.Object)">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsFactura.wsTbFactura.TbFacturaConsultarFacturaBusquedaMantenimiento(CapaPresentacion.wsFactura.Factura)">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsFactura.wsTbFactura.TbFacturaConsultarFacturaBusquedaMantenimientoAsync(CapaPresentacion.wsFactura.Factura)">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsFactura.wsTbFactura.TbFacturaConsultarFacturaBusquedaMantenimientoAsync(CapaPresentacion.wsFactura.Factura,System.Object)">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsFactura.wsTbFactura.TbFacturaConsultarFacturaNumeroSiguiente">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsFactura.wsTbFactura.TbFacturaConsultarFacturaNumeroSiguienteAsync">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsFactura.wsTbFactura.TbFacturaConsultarFacturaNumeroSiguienteAsync(System.Object)">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsFactura.wsTbFactura.TbFacturaConsultarFacturaMontoTotal(System.Int32)">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsFactura.wsTbFactura.TbFacturaConsultarFacturaMontoTotalAsync(System.Int32)">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsFactura.wsTbFactura.TbFacturaConsultarFacturaMontoTotalAsync(System.Int32,System.Object)">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsFactura.wsTbFactura.TbFacturaInsertarFactura(CapaPresentacion.wsFactura.Factura,System.Int32)">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsFactura.wsTbFactura.TbFacturaInsertarFacturaAsync(CapaPresentacion.wsFactura.Factura,System.Int32)">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsFactura.wsTbFactura.TbFacturaInsertarFacturaAsync(CapaPresentacion.wsFactura.Factura,System.Int32,System.Object)">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsFactura.wsTbFactura.TbFacturaActualizarFactura(CapaPresentacion.wsFactura.Factura)">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsFactura.wsTbFactura.TbFacturaActualizarFacturaAsync(CapaPresentacion.wsFactura.Factura)">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsFactura.wsTbFactura.TbFacturaActualizarFacturaAsync(CapaPresentacion.wsFactura.Factura,System.Object)">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsFactura.wsTbFactura.TbFacturaActualizarFacturaMontoTotal(CapaPresentacion.wsFactura.Factura)">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsFactura.wsTbFactura.TbFacturaActualizarFacturaMontoTotalAsync(CapaPresentacion.wsFactura.Factura)">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsFactura.wsTbFactura.TbFacturaActualizarFacturaMontoTotalAsync(CapaPresentacion.wsFactura.Factura,System.Object)">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsFactura.wsTbFactura.TbFacturaImprimirFactura(CapaPresentacion.wsFactura.Factura)">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsFactura.wsTbFactura.TbFacturaImprimirFacturaAsync(CapaPresentacion.wsFactura.Factura)">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsFactura.wsTbFactura.TbFacturaImprimirFacturaAsync(CapaPresentacion.wsFactura.Factura,System.Object)">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsFactura.wsTbFactura.TbFacturaAnularFactura(CapaPresentacion.wsFactura.Factura)">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsFactura.wsTbFactura.TbFacturaAnularFacturaAsync(CapaPresentacion.wsFactura.Factura)">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsFactura.wsTbFactura.TbFacturaAnularFacturaAsync(CapaPresentacion.wsFactura.Factura,System.Object)">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsFactura.wsTbFactura.CancelAsync(System.Object)">
+	<remarks/>
+</member><member name="T:CapaPresentacion.wsFactura.wsTbFactura">
+	<remarks/>
+</member><member name="P:CapaPresentacion.wsFactura.Persona.Correo">
+	<comentarios/>
+</member><member name="P:CapaPresentacion.wsFactura.Persona.Cedula">
+	<comentarios/>
+</member><member name="P:CapaPresentacion.wsFactura.Persona.Nombre">
+	<comentarios/>
+</member><member name="P:CapaPresentacion.wsFactura.Persona.Apellido1">
+	<comentarios/>
+</member><member name="P:CapaPresentacion.wsFactura.Persona.Apellido2">
+	<comentarios/>
+</member><member name="P:CapaPresentacion.wsFactura.Persona.FechaNacimiento">
+	<comentarios/>
+</member><member name="P:CapaPresentacion.wsFactura.Persona.Direccion">
+	<comentarios/>
+</member><member name="P:CapaPresentacion.wsFactura.Persona.Telefono">
+	<comentarios/>
+</member><member name="P:CapaPresentacion.wsFactura.Persona.Sexo">
+	<comentarios/>
+</member><member name="P:CapaPresentacion.wsFactura.Persona.Contrasena">
+	<comentarios/>
+</member><member name="P:CapaPresentacion.wsFactura.Persona.IdRol">
+	<comentarios/>
+</member><member name="P:CapaPresentacion.wsFactura.Persona.IdEstado">
+	<comentarios/>
+</member><member name="T:CapaPresentacion.wsFactura.Persona">
+	<comentarios/>
+</member><member name="P:CapaPresentacion.wsFactura.Factura.IdFactura">
+	<comentarios/>
+</member><member name="P:CapaPresentacion.wsFactura.Factura.Correo">
+	<comentarios/>
+</member><member name="P:CapaPresentacion.wsFactura.Factura.FechaEmision">
+	<comentarios/>
+</member><member name="P:CapaPresentacion.wsFactura.Factura.FechaVencimiento">
+	<comentarios/>
+</member><member name="P:CapaPresentacion.wsFactura.Factura.MontoTotal">
+	<comentarios/>
+</member><member name="P:CapaPresentacion.wsFactura.Factura.MontoCancelado">
+	<comentarios/>
+</member><member name="P:CapaPresentacion.wsFactura.Factura.SaldoActual">
+	<comentarios/>
+</member><member name="P:CapaPresentacion.wsFactura.Factura.IdEstado">
+	<comentarios/>
+</member><member name="T:CapaPresentacion.wsFactura.Factura">
+	<comentarios/>
+</member><member name="T:CapaPresentacion.wsFactura.TbFacturaConsultarFacturasCompletedEventHandler">
+	<remarks/>
+</member><member name="P:CapaPresentacion.wsFactura.TbFacturaConsultarFacturasCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:CapaPresentacion.wsFactura.TbFacturaConsultarFacturasCompletedEventArgs">
+	<remarks/>
+</member><member name="T:CapaPresentacion.wsFactura.TbFacturaConsultarFacturasFiltrosCompletedEventHandler">
+	<remarks/>
+</member><member name="P:CapaPresentacion.wsFactura.TbFacturaConsultarFacturasFiltrosCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:CapaPresentacion.wsFactura.TbFacturaConsultarFacturasFiltrosCompletedEventArgs">
+	<remarks/>
+</member><member name="T:CapaPresentacion.wsFactura.TbFacturaconsultarFacturasReportesCompletedEventHandler">
+	<remarks/>
+</member><member name="P:CapaPresentacion.wsFactura.TbFacturaconsultarFacturasReportesCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:CapaPresentacion.wsFactura.TbFacturaconsultarFacturasReportesCompletedEventArgs">
+	<remarks/>
+</member><member name="T:CapaPresentacion.wsFactura.TbFacturaConsultarFacturaBusquedaMantenimientoCompletedEventHandler">
+	<remarks/>
+</member><member name="P:CapaPresentacion.wsFactura.TbFacturaConsultarFacturaBusquedaMantenimientoCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:CapaPresentacion.wsFactura.TbFacturaConsultarFacturaBusquedaMantenimientoCompletedEventArgs">
+	<remarks/>
+</member><member name="T:CapaPresentacion.wsFactura.TbFacturaConsultarFacturaNumeroSiguienteCompletedEventHandler">
+	<remarks/>
+</member><member name="P:CapaPresentacion.wsFactura.TbFacturaConsultarFacturaNumeroSiguienteCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:CapaPresentacion.wsFactura.TbFacturaConsultarFacturaNumeroSiguienteCompletedEventArgs">
+	<remarks/>
+</member><member name="T:CapaPresentacion.wsFactura.TbFacturaConsultarFacturaMontoTotalCompletedEventHandler">
+	<remarks/>
+</member><member name="P:CapaPresentacion.wsFactura.TbFacturaConsultarFacturaMontoTotalCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:CapaPresentacion.wsFactura.TbFacturaConsultarFacturaMontoTotalCompletedEventArgs">
+	<remarks/>
+</member><member name="T:CapaPresentacion.wsFactura.TbFacturaInsertarFacturaCompletedEventHandler">
+	<remarks/>
+</member><member name="P:CapaPresentacion.wsFactura.TbFacturaInsertarFacturaCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:CapaPresentacion.wsFactura.TbFacturaInsertarFacturaCompletedEventArgs">
+	<remarks/>
+</member><member name="T:CapaPresentacion.wsFactura.TbFacturaActualizarFacturaCompletedEventHandler">
+	<remarks/>
+</member><member name="P:CapaPresentacion.wsFactura.TbFacturaActualizarFacturaCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:CapaPresentacion.wsFactura.TbFacturaActualizarFacturaCompletedEventArgs">
+	<remarks/>
+</member><member name="T:CapaPresentacion.wsFactura.TbFacturaActualizarFacturaMontoTotalCompletedEventHandler">
+	<remarks/>
+</member><member name="P:CapaPresentacion.wsFactura.TbFacturaActualizarFacturaMontoTotalCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:CapaPresentacion.wsFactura.TbFacturaActualizarFacturaMontoTotalCompletedEventArgs">
+	<remarks/>
+</member><member name="T:CapaPresentacion.wsFactura.TbFacturaImprimirFacturaCompletedEventHandler">
+	<remarks/>
+</member><member name="P:CapaPresentacion.wsFactura.TbFacturaImprimirFacturaCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:CapaPresentacion.wsFactura.TbFacturaImprimirFacturaCompletedEventArgs">
+	<remarks/>
+</member><member name="T:CapaPresentacion.wsFactura.TbFacturaAnularFacturaCompletedEventHandler">
+	<remarks/>
+</member><member name="P:CapaPresentacion.wsFactura.TbFacturaAnularFacturaCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:CapaPresentacion.wsFactura.TbFacturaAnularFacturaCompletedEventArgs">
+	<remarks/>
+</member><member name="F:CapaPresentacion.ServiciosABCAdmin.contentHeader">
+	<summary>
+Control contentHeader.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.ServiciosABCAdmin.form1">
+	<summary>
+Control form1.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.ServiciosABCAdmin.ScriptManagerAdmin">
+	<summary>
+Control ScriptManagerAdmin.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.ServiciosABCAdmin.lbNombreUsuario">
+	<summary>
+Control lbNombreUsuario.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.ServiciosABCAdmin.contentPage">
+	<summary>
+Control contentPage.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.ServiciosABCAdmin.contentFooter">
+	<summary>
+Control contentFooter.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="M:CapaPresentacion.wsDetalleFactura.wsTbDetalleFactura.#ctor">
+	<remarks/>
+</member><member name="E:CapaPresentacion.wsDetalleFactura.wsTbDetalleFactura.TbDetalleFacturaConsultarDetallesFacturaCompleted">
+	<remarks/>
+</member><member name="E:CapaPresentacion.wsDetalleFactura.wsTbDetalleFactura.TbDetalleFacturaConsultarDetalleFacturaCompleted">
+	<remarks/>
+</member><member name="E:CapaPresentacion.wsDetalleFactura.wsTbDetalleFactura.TbDetalleFacturaInsertarDetalleFacturaCompleted">
+	<remarks/>
+</member><member name="E:CapaPresentacion.wsDetalleFactura.wsTbDetalleFactura.TbDetalleFacturaActualizarDetalleFacturaCompleted">
+	<remarks/>
+</member><member name="E:CapaPresentacion.wsDetalleFactura.wsTbDetalleFactura.TbDetalleFacturaEliminarDetalleFacturaCompleted">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsDetalleFactura.wsTbDetalleFactura.TbDetalleFacturaConsultarDetallesFactura(System.Int32)">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsDetalleFactura.wsTbDetalleFactura.TbDetalleFacturaConsultarDetallesFacturaAsync(System.Int32)">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsDetalleFactura.wsTbDetalleFactura.TbDetalleFacturaConsultarDetallesFacturaAsync(System.Int32,System.Object)">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsDetalleFactura.wsTbDetalleFactura.TbDetalleFacturaConsultarDetalleFactura(CapaPresentacion.wsDetalleFactura.DetalleFactura)">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsDetalleFactura.wsTbDetalleFactura.TbDetalleFacturaConsultarDetalleFacturaAsync(CapaPresentacion.wsDetalleFactura.DetalleFactura)">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsDetalleFactura.wsTbDetalleFactura.TbDetalleFacturaConsultarDetalleFacturaAsync(CapaPresentacion.wsDetalleFactura.DetalleFactura,System.Object)">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsDetalleFactura.wsTbDetalleFactura.TbDetalleFacturaInsertarDetalleFactura(CapaPresentacion.wsDetalleFactura.DetalleFactura)">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsDetalleFactura.wsTbDetalleFactura.TbDetalleFacturaInsertarDetalleFacturaAsync(CapaPresentacion.wsDetalleFactura.DetalleFactura)">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsDetalleFactura.wsTbDetalleFactura.TbDetalleFacturaInsertarDetalleFacturaAsync(CapaPresentacion.wsDetalleFactura.DetalleFactura,System.Object)">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsDetalleFactura.wsTbDetalleFactura.TbDetalleFacturaActualizarDetalleFactura(CapaPresentacion.wsDetalleFactura.DetalleFactura)">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsDetalleFactura.wsTbDetalleFactura.TbDetalleFacturaActualizarDetalleFacturaAsync(CapaPresentacion.wsDetalleFactura.DetalleFactura)">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsDetalleFactura.wsTbDetalleFactura.TbDetalleFacturaActualizarDetalleFacturaAsync(CapaPresentacion.wsDetalleFactura.DetalleFactura,System.Object)">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsDetalleFactura.wsTbDetalleFactura.TbDetalleFacturaEliminarDetalleFactura(CapaPresentacion.wsDetalleFactura.DetalleFactura)">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsDetalleFactura.wsTbDetalleFactura.TbDetalleFacturaEliminarDetalleFacturaAsync(CapaPresentacion.wsDetalleFactura.DetalleFactura)">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsDetalleFactura.wsTbDetalleFactura.TbDetalleFacturaEliminarDetalleFacturaAsync(CapaPresentacion.wsDetalleFactura.DetalleFactura,System.Object)">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsDetalleFactura.wsTbDetalleFactura.CancelAsync(System.Object)">
+	<remarks/>
+</member><member name="T:CapaPresentacion.wsDetalleFactura.wsTbDetalleFactura">
+	<remarks/>
+</member><member name="P:CapaPresentacion.wsDetalleFactura.DetalleFactura.IdFactura">
+	<comentarios/>
+</member><member name="P:CapaPresentacion.wsDetalleFactura.DetalleFactura.IdDetalleFactura">
+	<comentarios/>
+</member><member name="P:CapaPresentacion.wsDetalleFactura.DetalleFactura.IdServicio">
+	<comentarios/>
+</member><member name="P:CapaPresentacion.wsDetalleFactura.DetalleFactura.PrecioUnitario">
+	<comentarios/>
+</member><member name="P:CapaPresentacion.wsDetalleFactura.DetalleFactura.Cantidad">
+	<comentarios/>
+</member><member name="T:CapaPresentacion.wsDetalleFactura.DetalleFactura">
+	<comentarios/>
+</member><member name="T:CapaPresentacion.wsDetalleFactura.TbDetalleFacturaConsultarDetallesFacturaCompletedEventHandler">
+	<remarks/>
+</member><member name="P:CapaPresentacion.wsDetalleFactura.TbDetalleFacturaConsultarDetallesFacturaCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:CapaPresentacion.wsDetalleFactura.TbDetalleFacturaConsultarDetallesFacturaCompletedEventArgs">
+	<remarks/>
+</member><member name="T:CapaPresentacion.wsDetalleFactura.TbDetalleFacturaConsultarDetalleFacturaCompletedEventHandler">
+	<remarks/>
+</member><member name="P:CapaPresentacion.wsDetalleFactura.TbDetalleFacturaConsultarDetalleFacturaCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:CapaPresentacion.wsDetalleFactura.TbDetalleFacturaConsultarDetalleFacturaCompletedEventArgs">
+	<remarks/>
+</member><member name="T:CapaPresentacion.wsDetalleFactura.TbDetalleFacturaInsertarDetalleFacturaCompletedEventHandler">
+	<remarks/>
+</member><member name="P:CapaPresentacion.wsDetalleFactura.TbDetalleFacturaInsertarDetalleFacturaCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:CapaPresentacion.wsDetalleFactura.TbDetalleFacturaInsertarDetalleFacturaCompletedEventArgs">
+	<remarks/>
+</member><member name="T:CapaPresentacion.wsDetalleFactura.TbDetalleFacturaActualizarDetalleFacturaCompletedEventHandler">
+	<remarks/>
+</member><member name="P:CapaPresentacion.wsDetalleFactura.TbDetalleFacturaActualizarDetalleFacturaCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:CapaPresentacion.wsDetalleFactura.TbDetalleFacturaActualizarDetalleFacturaCompletedEventArgs">
+	<remarks/>
+</member><member name="T:CapaPresentacion.wsDetalleFactura.TbDetalleFacturaEliminarDetalleFacturaCompletedEventHandler">
+	<remarks/>
+</member><member name="P:CapaPresentacion.wsDetalleFactura.TbDetalleFacturaEliminarDetalleFacturaCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:CapaPresentacion.wsDetalleFactura.TbDetalleFacturaEliminarDetalleFacturaCompletedEventArgs">
+	<remarks/>
+</member><member name="F:CapaPresentacion.ServiciosABCSuperAdmin.contentHeader">
+	<summary>
+Control contentHeader.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.ServiciosABCSuperAdmin.form1">
+	<summary>
+Control form1.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.ServiciosABCSuperAdmin.ScriptManagerSuperAdmin">
+	<summary>
+Control ScriptManagerSuperAdmin.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.ServiciosABCSuperAdmin.lbNombreUsuario">
+	<summary>
+Control lbNombreUsuario.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.ServiciosABCSuperAdmin.contentPage">
+	<summary>
+Control contentPage.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.ServiciosABCSuperAdmin.contentFooter">
+	<summary>
+Control contentFooter.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion._default.txtCorreo">
+	<summary>
+Control txtCorreo.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion._default.txtContraseña">
+	<summary>
+Control txtContraseña.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion._default.pnErrorInicioSesion">
+	<summary>
+Control pnErrorInicioSesion.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion._default.lbErrorInicioSesion">
+	<summary>
+Control lbErrorInicioSesion.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion._default.btnLimpiar">
+	<summary>
+Control btnLimpiar.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion._default.btnIngresar">
+	<summary>
+Control btnIngresar.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.maServicios.pnErrorInicioSesion">
+	<summary>
+Control pnErrorInicioSesion.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.maServicios.lbErrorInicioSesion">
+	<summary>
+Control lbErrorInicioSesion.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.maServicios.txtDescripcion">
+	<summary>
+Control txtDescripcion.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.maServicios.txtPrecioUnitario">
+	<summary>
+Control txtPrecioUnitario.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.maServicios.ddlImpuesto">
+	<summary>
+Control ddlImpuesto.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.maServicios.ddlEstado">
+	<summary>
+Control ddlEstado.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.maServicios.hlRegresar">
+	<summary>
+Control hlRegresar.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.maServicios.btnLimpiar">
+	<summary>
+Control btnLimpiar.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.maServicios.btnAccion">
+	<summary>
+Control btnAccion.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="M:CapaPresentacion.wsEstado.wsTbEstado.#ctor">
+	<remarks/>
+</member><member name="E:CapaPresentacion.wsEstado.wsTbEstado.TbPersonaConsultarEstadosCompleted">
+	<remarks/>
+</member><member name="E:CapaPresentacion.wsEstado.wsTbEstado.TbEstadoConsultarEstadoCompleted">
+	<remarks/>
+</member><member name="E:CapaPresentacion.wsEstado.wsTbEstado.TbEstadoInsertarEstadoCompleted">
+	<remarks/>
+</member><member name="E:CapaPresentacion.wsEstado.wsTbEstado.TbEstadoActualizarEstadoCompleted">
+	<remarks/>
+</member><member name="E:CapaPresentacion.wsEstado.wsTbEstado.TbEstadoEliminarEstadoCompleted">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsEstado.wsTbEstado.TbPersonaConsultarEstados">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsEstado.wsTbEstado.TbPersonaConsultarEstadosAsync">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsEstado.wsTbEstado.TbPersonaConsultarEstadosAsync(System.Object)">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsEstado.wsTbEstado.TbEstadoConsultarEstado(CapaPresentacion.wsEstado.Estado)">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsEstado.wsTbEstado.TbEstadoConsultarEstadoAsync(CapaPresentacion.wsEstado.Estado)">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsEstado.wsTbEstado.TbEstadoConsultarEstadoAsync(CapaPresentacion.wsEstado.Estado,System.Object)">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsEstado.wsTbEstado.TbEstadoInsertarEstado(CapaPresentacion.wsEstado.Estado)">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsEstado.wsTbEstado.TbEstadoInsertarEstadoAsync(CapaPresentacion.wsEstado.Estado)">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsEstado.wsTbEstado.TbEstadoInsertarEstadoAsync(CapaPresentacion.wsEstado.Estado,System.Object)">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsEstado.wsTbEstado.TbEstadoActualizarEstado(CapaPresentacion.wsEstado.Estado)">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsEstado.wsTbEstado.TbEstadoActualizarEstadoAsync(CapaPresentacion.wsEstado.Estado)">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsEstado.wsTbEstado.TbEstadoActualizarEstadoAsync(CapaPresentacion.wsEstado.Estado,System.Object)">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsEstado.wsTbEstado.TbEstadoEliminarEstado(CapaPresentacion.wsEstado.Estado)">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsEstado.wsTbEstado.TbEstadoEliminarEstadoAsync(CapaPresentacion.wsEstado.Estado)">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsEstado.wsTbEstado.TbEstadoEliminarEstadoAsync(CapaPresentacion.wsEstado.Estado,System.Object)">
+	<remarks/>
+</member><member name="M:CapaPresentacion.wsEstado.wsTbEstado.CancelAsync(System.Object)">
+	<remarks/>
+</member><member name="T:CapaPresentacion.wsEstado.wsTbEstado">
+	<remarks/>
+</member><member name="P:CapaPresentacion.wsEstado.Estado.IdEstado">
+	<comentarios/>
+</member><member name="P:CapaPresentacion.wsEstado.Estado.Descripcion">
+	<comentarios/>
+</member><member name="T:CapaPresentacion.wsEstado.Estado">
+	<comentarios/>
+</member><member name="T:CapaPresentacion.wsEstado.TbPersonaConsultarEstadosCompletedEventHandler">
+	<remarks/>
+</member><member name="P:CapaPresentacion.wsEstado.TbPersonaConsultarEstadosCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:CapaPresentacion.wsEstado.TbPersonaConsultarEstadosCompletedEventArgs">
+	<remarks/>
+</member><member name="T:CapaPresentacion.wsEstado.TbEstadoConsultarEstadoCompletedEventHandler">
+	<remarks/>
+</member><member name="P:CapaPresentacion.wsEstado.TbEstadoConsultarEstadoCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:CapaPresentacion.wsEstado.TbEstadoConsultarEstadoCompletedEventArgs">
+	<remarks/>
+</member><member name="T:CapaPresentacion.wsEstado.TbEstadoInsertarEstadoCompletedEventHandler">
+	<remarks/>
+</member><member name="P:CapaPresentacion.wsEstado.TbEstadoInsertarEstadoCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:CapaPresentacion.wsEstado.TbEstadoInsertarEstadoCompletedEventArgs">
+	<remarks/>
+</member><member name="T:CapaPresentacion.wsEstado.TbEstadoActualizarEstadoCompletedEventHandler">
+	<remarks/>
+</member><member name="P:CapaPresentacion.wsEstado.TbEstadoActualizarEstadoCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:CapaPresentacion.wsEstado.TbEstadoActualizarEstadoCompletedEventArgs">
+	<remarks/>
+</member><member name="T:CapaPresentacion.wsEstado.TbEstadoEliminarEstadoCompletedEventHandler">
+	<remarks/>
+</member><member name="P:CapaPresentacion.wsEstado.TbEstadoEliminarEstadoCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:CapaPresentacion.wsEstado.TbEstadoEliminarEstadoCompletedEventArgs">
+	<remarks/>
+</member><member name="F:CapaPresentacion.maRecibos.pnErrorInicioSesion">
+	<summary>
+Control pnErrorInicioSesion.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.maRecibos.lbErrorInicioSesion">
+	<summary>
+Control lbErrorInicioSesion.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.maRecibos.txtIdRecibo">
+	<summary>
+Control txtIdRecibo.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.maRecibos.txtFechaEmision">
+	<summary>
+Control txtFechaEmision.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.maRecibos.ddlNombreCliente">
+	<summary>
+Control ddlNombreCliente.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.maRecibos.txtDescripcion">
+	<summary>
+Control txtDescripcion.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.maRecibos.ddlEstado">
+	<summary>
+Control ddlEstado.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.maRecibos.txtMontoTotal">
+	<summary>
+Control txtMontoTotal.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.maRecibos.btnLimpiar">
+	<summary>
+Control btnLimpiar.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.maRecibos.btnAccion">
+	<summary>
+Control btnAccion.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.maRecibos.imgbtnAgregar">
+	<summary>
+Control imgbtnAgregar.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.maRecibos.updatePanelListaDetalleRecibo">
+	<summary>
+Control updatePanelListaDetalleRecibo.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.maRecibos.pnGridViewSinDatos">
+	<summary>
+Control pnGridViewSinDatos.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.maRecibos.lbGridViewSinDatos">
+	<summary>
+Control lbGridViewSinDatos.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.maRecibos.grdListaDetalleRecibo">
+	<summary>
+Control grdListaDetalleRecibo.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.maRecibos.hlRegresar">
+	<summary>
+Control hlRegresar.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.maRecibos.btnRegistrarRecibo">
+	<summary>
+Control btnRegistrarRecibo.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.listadoRecibos.txtIdRecibo">
+	<summary>
+Control txtIdRecibo.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.listadoRecibos.txtNombreCliente">
+	<summary>
+Control txtNombreCliente.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.listadoRecibos.imgbtnBuscar">
+	<summary>
+Control imgbtnBuscar.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.listadoRecibos.imgbtnLimpiar">
+	<summary>
+Control imgbtnLimpiar.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.listadoRecibos.imgbtnAgregar">
+	<summary>
+Control imgbtnAgregar.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.listadoRecibos.updatePanelListaRecibos">
+	<summary>
+Control updatePanelListaRecibos.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.listadoRecibos.pnGridViewSinDatos">
+	<summary>
+Control pnGridViewSinDatos.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.listadoRecibos.lbGridViewSinDatos">
+	<summary>
+Control lbGridViewSinDatos.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.listadoRecibos.grdListaRecibos">
+	<summary>
+Control grdListaRecibos.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.listadoServicios.txtDescripcionBusqueda">
+	<summary>
+Control txtDescripcionBusqueda.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.listadoServicios.txtPrecioUnitarioBusqueda">
+	<summary>
+Control txtPrecioUnitarioBusqueda.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.listadoServicios.imgbtnBuscar">
+	<summary>
+Control imgbtnBuscar.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.listadoServicios.imgbtnLimpiar">
+	<summary>
+Control imgbtnLimpiar.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.listadoServicios.imgbtnAgregar">
+	<summary>
+Control imgbtnAgregar.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.listadoServicios.updatePanelListaServicios">
+	<summary>
+Control updatePanelListaServicios.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.listadoServicios.pnGridViewSinDatos">
+	<summary>
+Control pnGridViewSinDatos.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.listadoServicios.lbGridViewSinDatos">
+	<summary>
+Control lbGridViewSinDatos.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:CapaPresentacion.listadoServicios.grdListaServicios">
+	<summary>
+Control grdListaServicios.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+</members>
+</doc>

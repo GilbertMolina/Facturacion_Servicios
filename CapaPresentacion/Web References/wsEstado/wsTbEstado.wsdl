@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="TbPersonaConsultarEstados">
+        <s:complexType />
+      </s:element>
+      <s:element name="TbPersonaConsultarEstadosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TbPersonaConsultarEstadosResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TbEstadoConsultarEstado">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pEstado" type="tns:Estado" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="Estado">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="IdEstado" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Descripcion" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="TbEstadoConsultarEstadoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TbEstadoConsultarEstadoResult" type="tns:Estado" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TbEstadoInsertarEstado">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pEstado" type="tns:Estado" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TbEstadoInsertarEstadoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TbEstadoInsertarEstadoResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TbEstadoActualizarEstado">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pEstado" type="tns:Estado" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TbEstadoActualizarEstadoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TbEstadoActualizarEstadoResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TbEstadoEliminarEstado">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pEstado" type="tns:Estado" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TbEstadoEliminarEstadoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TbEstadoEliminarEstadoResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="TbPersonaConsultarEstadosSoapIn">
+    <wsdl:part name="parameters" element="tns:TbPersonaConsultarEstados" />
+  </wsdl:message>
+  <wsdl:message name="TbPersonaConsultarEstadosSoapOut">
+    <wsdl:part name="parameters" element="tns:TbPersonaConsultarEstadosResponse" />
+  </wsdl:message>
+  <wsdl:message name="TbEstadoConsultarEstadoSoapIn">
+    <wsdl:part name="parameters" element="tns:TbEstadoConsultarEstado" />
+  </wsdl:message>
+  <wsdl:message name="TbEstadoConsultarEstadoSoapOut">
+    <wsdl:part name="parameters" element="tns:TbEstadoConsultarEstadoResponse" />
+  </wsdl:message>
+  <wsdl:message name="TbEstadoInsertarEstadoSoapIn">
+    <wsdl:part name="parameters" element="tns:TbEstadoInsertarEstado" />
+  </wsdl:message>
+  <wsdl:message name="TbEstadoInsertarEstadoSoapOut">
+    <wsdl:part name="parameters" element="tns:TbEstadoInsertarEstadoResponse" />
+  </wsdl:message>
+  <wsdl:message name="TbEstadoActualizarEstadoSoapIn">
+    <wsdl:part name="parameters" element="tns:TbEstadoActualizarEstado" />
+  </wsdl:message>
+  <wsdl:message name="TbEstadoActualizarEstadoSoapOut">
+    <wsdl:part name="parameters" element="tns:TbEstadoActualizarEstadoResponse" />
+  </wsdl:message>
+  <wsdl:message name="TbEstadoEliminarEstadoSoapIn">
+    <wsdl:part name="parameters" element="tns:TbEstadoEliminarEstado" />
+  </wsdl:message>
+  <wsdl:message name="TbEstadoEliminarEstadoSoapOut">
+    <wsdl:part name="parameters" element="tns:TbEstadoEliminarEstadoResponse" />
+  </wsdl:message>
+  <wsdl:portType name="wsTbEstadoSoap">
+    <wsdl:operation name="TbPersonaConsultarEstados">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Método que consulta la lista de Estados por medio de un DataSet.</wsdl:documentation>
+      <wsdl:input message="tns:TbPersonaConsultarEstadosSoapIn" />
+      <wsdl:output message="tns:TbPersonaConsultarEstadosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TbEstadoConsultarEstado">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Método que consulta un Estado por su ID y retorna a un Estado.</wsdl:documentation>
+      <wsdl:input message="tns:TbEstadoConsultarEstadoSoapIn" />
+      <wsdl:output message="tns:TbEstadoConsultarEstadoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TbEstadoInsertarEstado">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Método que inserta un Estado.</wsdl:documentation>
+      <wsdl:input message="tns:TbEstadoInsertarEstadoSoapIn" />
+      <wsdl:output message="tns:TbEstadoInsertarEstadoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TbEstadoActualizarEstado">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Método que actualiza un Estado.</wsdl:documentation>
+      <wsdl:input message="tns:TbEstadoActualizarEstadoSoapIn" />
+      <wsdl:output message="tns:TbEstadoActualizarEstadoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TbEstadoEliminarEstado">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Método que elimina un Estado.</wsdl:documentation>
+      <wsdl:input message="tns:TbEstadoEliminarEstadoSoapIn" />
+      <wsdl:output message="tns:TbEstadoEliminarEstadoSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="wsTbEstadoSoap" type="tns:wsTbEstadoSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="TbPersonaConsultarEstados">
+      <soap:operation soapAction="http://tempuri.org/TbPersonaConsultarEstados" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TbEstadoConsultarEstado">
+      <soap:operation soapAction="http://tempuri.org/TbEstadoConsultarEstado" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TbEstadoInsertarEstado">
+      <soap:operation soapAction="http://tempuri.org/TbEstadoInsertarEstado" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TbEstadoActualizarEstado">
+      <soap:operation soapAction="http://tempuri.org/TbEstadoActualizarEstado" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TbEstadoEliminarEstado">
+      <soap:operation soapAction="http://tempuri.org/TbEstadoEliminarEstado" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="wsTbEstadoSoap12" type="tns:wsTbEstadoSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="TbPersonaConsultarEstados">
+      <soap12:operation soapAction="http://tempuri.org/TbPersonaConsultarEstados" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TbEstadoConsultarEstado">
+      <soap12:operation soapAction="http://tempuri.org/TbEstadoConsultarEstado" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TbEstadoInsertarEstado">
+      <soap12:operation soapAction="http://tempuri.org/TbEstadoInsertarEstado" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TbEstadoActualizarEstado">
+      <soap12:operation soapAction="http://tempuri.org/TbEstadoActualizarEstado" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TbEstadoEliminarEstado">
+      <soap12:operation soapAction="http://tempuri.org/TbEstadoEliminarEstado" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="wsTbEstado">
+    <wsdl:port name="wsTbEstadoSoap" binding="tns:wsTbEstadoSoap">
+      <soap:address location="http://localhost:19447/wsTbEstado.asmx" />
+    </wsdl:port>
+    <wsdl:port name="wsTbEstadoSoap12" binding="tns:wsTbEstadoSoap12">
+      <soap12:address location="http://localhost:19447/wsTbEstado.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,33 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="My" GeneratedClassName="MySettings" UseMySettingsClassName="true">
+  <Profiles />
+  <Settings>
+    <Setting Name="CapaPresentacion_wsDetalleFactura_wsTbDetalleFactura" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost:19447/wsTbDetalleFactura.asmx</Value>
+    </Setting>
+    <Setting Name="CapaPresentacion_wsDetalleRecibo_wsTbDetalleRecibo" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost:19447/wsTbDetalleRecibo.asmx</Value>
+    </Setting>
+    <Setting Name="CapaPresentacion_wsEstado_wsTbEstado" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost:19447/wsTbEstado.asmx</Value>
+    </Setting>
+    <Setting Name="CapaPresentacion_wsFactura_wsTbFactura" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost:19447/wsTbFactura.asmx</Value>
+    </Setting>
+    <Setting Name="CapaPresentacion_wsImpuesto_wsTbImpuesto" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost:19447/wsTbImpuesto.asmx</Value>
+    </Setting>
+    <Setting Name="CapaPresentacion_wsRol_wsTbRol" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost:19447/wsTbRol.asmx</Value>
+    </Setting>
+    <Setting Name="CapaPresentacion_wsPersona_wsTbPersona" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost:19447/wsTbPersona.asmx</Value>
+    </Setting>
+    <Setting Name="CapaPresentacion_wsServicio1_wsTbServicio" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost:19447/wsTbServicio.asmx</Value>
+    </Setting>
+    <Setting Name="CapaPresentacion_wsRecibo_wsTbRecibo" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost:19447/wsTbRecibo.asmx</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

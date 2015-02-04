@@ -1,0 +1,534 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="TbPersonaConsultarPersonas">
+        <s:complexType />
+      </s:element>
+      <s:element name="TbPersonaConsultarPersonasResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TbPersonaConsultarPersonasResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TbPersonaConsultarClientes">
+        <s:complexType />
+      </s:element>
+      <s:element name="TbPersonaConsultarClientesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TbPersonaConsultarClientesResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TbPersonaConsultarPersonasFiltros">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pCedula" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pNombreCompleto" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TbPersonaConsultarPersonasFiltrosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TbPersonaConsultarPersonasFiltrosResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TbPersonaConsultarClientesFiltros">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pCedula" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pNombreCompleto" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TbPersonaConsultarClientesFiltrosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TbPersonaConsultarClientesFiltrosResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TbPersonaConsultarPersonaLogin">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pPersona" type="tns:Persona" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="Persona">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Correo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Cedula" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Nombre" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Apellido1" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Apellido2" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="FechaNacimiento" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="Direccion" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Telefono" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Sexo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Contrasena" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="IdRol" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="IdEstado" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="TbPersonaConsultarPersonaLoginResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TbPersonaConsultarPersonaLoginResult" type="tns:Persona" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TbPersonaConsultarPersonaBusquedaContraseña">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pPersona" type="tns:Persona" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TbPersonaConsultarPersonaBusquedaContraseñaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TbPersonaConsultarPersonaBusquedaContraseñaResult" type="tns:Persona" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TbPersonaConsultarPersonaBusquedaMantenimiento">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pPersona" type="tns:Persona" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TbPersonaConsultarPersonaBusquedaMantenimientoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TbPersonaConsultarPersonaBusquedaMantenimientoResult" type="tns:Persona" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TbPersonaInsertarPersona">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pPersona" type="tns:Persona" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TbPersonaInsertarPersonaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TbPersonaInsertarPersonaResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TbPersonaActualizarPersona">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pPersona" type="tns:Persona" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TbPersonaActualizarPersonaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TbPersonaActualizarPersonaResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TbPersonaActualizarPersonaContraseña">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pPersona" type="tns:Persona" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TbPersonaActualizarPersonaContraseñaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TbPersonaActualizarPersonaContraseñaResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TbPersonaEliminarPersona">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pPersona" type="tns:Persona" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TbPersonaEliminarPersonaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TbPersonaEliminarPersonaResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="TbPersonaConsultarPersonasSoapIn">
+    <wsdl:part name="parameters" element="tns:TbPersonaConsultarPersonas" />
+  </wsdl:message>
+  <wsdl:message name="TbPersonaConsultarPersonasSoapOut">
+    <wsdl:part name="parameters" element="tns:TbPersonaConsultarPersonasResponse" />
+  </wsdl:message>
+  <wsdl:message name="TbPersonaConsultarClientesSoapIn">
+    <wsdl:part name="parameters" element="tns:TbPersonaConsultarClientes" />
+  </wsdl:message>
+  <wsdl:message name="TbPersonaConsultarClientesSoapOut">
+    <wsdl:part name="parameters" element="tns:TbPersonaConsultarClientesResponse" />
+  </wsdl:message>
+  <wsdl:message name="TbPersonaConsultarPersonasFiltrosSoapIn">
+    <wsdl:part name="parameters" element="tns:TbPersonaConsultarPersonasFiltros" />
+  </wsdl:message>
+  <wsdl:message name="TbPersonaConsultarPersonasFiltrosSoapOut">
+    <wsdl:part name="parameters" element="tns:TbPersonaConsultarPersonasFiltrosResponse" />
+  </wsdl:message>
+  <wsdl:message name="TbPersonaConsultarClientesFiltrosSoapIn">
+    <wsdl:part name="parameters" element="tns:TbPersonaConsultarClientesFiltros" />
+  </wsdl:message>
+  <wsdl:message name="TbPersonaConsultarClientesFiltrosSoapOut">
+    <wsdl:part name="parameters" element="tns:TbPersonaConsultarClientesFiltrosResponse" />
+  </wsdl:message>
+  <wsdl:message name="TbPersonaConsultarPersonaLoginSoapIn">
+    <wsdl:part name="parameters" element="tns:TbPersonaConsultarPersonaLogin" />
+  </wsdl:message>
+  <wsdl:message name="TbPersonaConsultarPersonaLoginSoapOut">
+    <wsdl:part name="parameters" element="tns:TbPersonaConsultarPersonaLoginResponse" />
+  </wsdl:message>
+  <wsdl:message name="TbPersonaConsultarPersonaBusquedaContraseñaSoapIn">
+    <wsdl:part name="parameters" element="tns:TbPersonaConsultarPersonaBusquedaContraseña" />
+  </wsdl:message>
+  <wsdl:message name="TbPersonaConsultarPersonaBusquedaContraseñaSoapOut">
+    <wsdl:part name="parameters" element="tns:TbPersonaConsultarPersonaBusquedaContraseñaResponse" />
+  </wsdl:message>
+  <wsdl:message name="TbPersonaConsultarPersonaBusquedaMantenimientoSoapIn">
+    <wsdl:part name="parameters" element="tns:TbPersonaConsultarPersonaBusquedaMantenimiento" />
+  </wsdl:message>
+  <wsdl:message name="TbPersonaConsultarPersonaBusquedaMantenimientoSoapOut">
+    <wsdl:part name="parameters" element="tns:TbPersonaConsultarPersonaBusquedaMantenimientoResponse" />
+  </wsdl:message>
+  <wsdl:message name="TbPersonaInsertarPersonaSoapIn">
+    <wsdl:part name="parameters" element="tns:TbPersonaInsertarPersona" />
+  </wsdl:message>
+  <wsdl:message name="TbPersonaInsertarPersonaSoapOut">
+    <wsdl:part name="parameters" element="tns:TbPersonaInsertarPersonaResponse" />
+  </wsdl:message>
+  <wsdl:message name="TbPersonaActualizarPersonaSoapIn">
+    <wsdl:part name="parameters" element="tns:TbPersonaActualizarPersona" />
+  </wsdl:message>
+  <wsdl:message name="TbPersonaActualizarPersonaSoapOut">
+    <wsdl:part name="parameters" element="tns:TbPersonaActualizarPersonaResponse" />
+  </wsdl:message>
+  <wsdl:message name="TbPersonaActualizarPersonaContraseñaSoapIn">
+    <wsdl:part name="parameters" element="tns:TbPersonaActualizarPersonaContraseña" />
+  </wsdl:message>
+  <wsdl:message name="TbPersonaActualizarPersonaContraseñaSoapOut">
+    <wsdl:part name="parameters" element="tns:TbPersonaActualizarPersonaContraseñaResponse" />
+  </wsdl:message>
+  <wsdl:message name="TbPersonaEliminarPersonaSoapIn">
+    <wsdl:part name="parameters" element="tns:TbPersonaEliminarPersona" />
+  </wsdl:message>
+  <wsdl:message name="TbPersonaEliminarPersonaSoapOut">
+    <wsdl:part name="parameters" element="tns:TbPersonaEliminarPersonaResponse" />
+  </wsdl:message>
+  <wsdl:portType name="wsTbPersonaSoap">
+    <wsdl:operation name="TbPersonaConsultarPersonas">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Método que consulta la lista de Personas por medio de un DataSet.</wsdl:documentation>
+      <wsdl:input message="tns:TbPersonaConsultarPersonasSoapIn" />
+      <wsdl:output message="tns:TbPersonaConsultarPersonasSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TbPersonaConsultarClientes">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Método que consulta la lista de Clientes por medio de un DataSet.</wsdl:documentation>
+      <wsdl:input message="tns:TbPersonaConsultarClientesSoapIn" />
+      <wsdl:output message="tns:TbPersonaConsultarClientesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TbPersonaConsultarPersonasFiltros">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Método que consulta la lista de Personas pasandole como filtros el numero de cedula o el nombre completo de un usuario y retorna un DataSet.</wsdl:documentation>
+      <wsdl:input message="tns:TbPersonaConsultarPersonasFiltrosSoapIn" />
+      <wsdl:output message="tns:TbPersonaConsultarPersonasFiltrosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TbPersonaConsultarClientesFiltros">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Método que consulta la lista de Clientes pasandole como filtros el numero de cedula o el nombre completo y retorna un DataSet.</wsdl:documentation>
+      <wsdl:input message="tns:TbPersonaConsultarClientesFiltrosSoapIn" />
+      <wsdl:output message="tns:TbPersonaConsultarClientesFiltrosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TbPersonaConsultarPersonaLogin">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Método que consulta a una Persona por su correo y contraseña y retorna a una Persona.</wsdl:documentation>
+      <wsdl:input message="tns:TbPersonaConsultarPersonaLoginSoapIn" />
+      <wsdl:output message="tns:TbPersonaConsultarPersonaLoginSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TbPersonaConsultarPersonaBusquedaContraseña">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Método que consulta a una Persona para recordar un contraseña y retorna a una Persona.</wsdl:documentation>
+      <wsdl:input message="tns:TbPersonaConsultarPersonaBusquedaContraseñaSoapIn" />
+      <wsdl:output message="tns:TbPersonaConsultarPersonaBusquedaContraseñaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TbPersonaConsultarPersonaBusquedaMantenimiento">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Método que consulta a una Persona por su correo y cedula y retorna a una Persona.</wsdl:documentation>
+      <wsdl:input message="tns:TbPersonaConsultarPersonaBusquedaMantenimientoSoapIn" />
+      <wsdl:output message="tns:TbPersonaConsultarPersonaBusquedaMantenimientoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TbPersonaInsertarPersona">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Método que inserta a una Persona.</wsdl:documentation>
+      <wsdl:input message="tns:TbPersonaInsertarPersonaSoapIn" />
+      <wsdl:output message="tns:TbPersonaInsertarPersonaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TbPersonaActualizarPersona">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Método que actualiza a una Persona.</wsdl:documentation>
+      <wsdl:input message="tns:TbPersonaActualizarPersonaSoapIn" />
+      <wsdl:output message="tns:TbPersonaActualizarPersonaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TbPersonaActualizarPersonaContraseña">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Método que actualiza la contraseña de una Persona.</wsdl:documentation>
+      <wsdl:input message="tns:TbPersonaActualizarPersonaContraseñaSoapIn" />
+      <wsdl:output message="tns:TbPersonaActualizarPersonaContraseñaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TbPersonaEliminarPersona">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Método que elimina a una Persona.</wsdl:documentation>
+      <wsdl:input message="tns:TbPersonaEliminarPersonaSoapIn" />
+      <wsdl:output message="tns:TbPersonaEliminarPersonaSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="wsTbPersonaSoap" type="tns:wsTbPersonaSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="TbPersonaConsultarPersonas">
+      <soap:operation soapAction="http://tempuri.org/TbPersonaConsultarPersonas" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TbPersonaConsultarClientes">
+      <soap:operation soapAction="http://tempuri.org/TbPersonaConsultarClientes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TbPersonaConsultarPersonasFiltros">
+      <soap:operation soapAction="http://tempuri.org/TbPersonaConsultarPersonasFiltros" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TbPersonaConsultarClientesFiltros">
+      <soap:operation soapAction="http://tempuri.org/TbPersonaConsultarClientesFiltros" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TbPersonaConsultarPersonaLogin">
+      <soap:operation soapAction="http://tempuri.org/TbPersonaConsultarPersonaLogin" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TbPersonaConsultarPersonaBusquedaContraseña">
+      <soap:operation soapAction="http://tempuri.org/TbPersonaConsultarPersonaBusquedaContraseña" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TbPersonaConsultarPersonaBusquedaMantenimiento">
+      <soap:operation soapAction="http://tempuri.org/TbPersonaConsultarPersonaBusquedaMantenimiento" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TbPersonaInsertarPersona">
+      <soap:operation soapAction="http://tempuri.org/TbPersonaInsertarPersona" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TbPersonaActualizarPersona">
+      <soap:operation soapAction="http://tempuri.org/TbPersonaActualizarPersona" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TbPersonaActualizarPersonaContraseña">
+      <soap:operation soapAction="http://tempuri.org/TbPersonaActualizarPersonaContraseña" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TbPersonaEliminarPersona">
+      <soap:operation soapAction="http://tempuri.org/TbPersonaEliminarPersona" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="wsTbPersonaSoap12" type="tns:wsTbPersonaSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="TbPersonaConsultarPersonas">
+      <soap12:operation soapAction="http://tempuri.org/TbPersonaConsultarPersonas" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TbPersonaConsultarClientes">
+      <soap12:operation soapAction="http://tempuri.org/TbPersonaConsultarClientes" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TbPersonaConsultarPersonasFiltros">
+      <soap12:operation soapAction="http://tempuri.org/TbPersonaConsultarPersonasFiltros" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TbPersonaConsultarClientesFiltros">
+      <soap12:operation soapAction="http://tempuri.org/TbPersonaConsultarClientesFiltros" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TbPersonaConsultarPersonaLogin">
+      <soap12:operation soapAction="http://tempuri.org/TbPersonaConsultarPersonaLogin" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TbPersonaConsultarPersonaBusquedaContraseña">
+      <soap12:operation soapAction="http://tempuri.org/TbPersonaConsultarPersonaBusquedaContraseña" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TbPersonaConsultarPersonaBusquedaMantenimiento">
+      <soap12:operation soapAction="http://tempuri.org/TbPersonaConsultarPersonaBusquedaMantenimiento" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TbPersonaInsertarPersona">
+      <soap12:operation soapAction="http://tempuri.org/TbPersonaInsertarPersona" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TbPersonaActualizarPersona">
+      <soap12:operation soapAction="http://tempuri.org/TbPersonaActualizarPersona" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TbPersonaActualizarPersonaContraseña">
+      <soap12:operation soapAction="http://tempuri.org/TbPersonaActualizarPersonaContraseña" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TbPersonaEliminarPersona">
+      <soap12:operation soapAction="http://tempuri.org/TbPersonaEliminarPersona" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="wsTbPersona">
+    <wsdl:port name="wsTbPersonaSoap" binding="tns:wsTbPersonaSoap">
+      <soap:address location="http://localhost:19447/wsTbPersona.asmx" />
+    </wsdl:port>
+    <wsdl:port name="wsTbPersonaSoap12" binding="tns:wsTbPersonaSoap12">
+      <soap12:address location="http://localhost:19447/wsTbPersona.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
